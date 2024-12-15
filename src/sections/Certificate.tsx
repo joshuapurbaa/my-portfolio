@@ -7,60 +7,57 @@ import styles from "../styles/Certificate.module.css";
 const certificateData = [
   {
     name: "Memulai Pemrograman Dengan Dart",
-    path: ["src/assets/certificate_img/dart.jpg"],
+    path: ["/certificate_img/dart.jpg"],
     link: "https://www.dicoding.com/certificates/QLZ9854VDX5D",
   },
   {
     name: "Belajar Membuat Aplikasi Flutter untuk Pemula",
-    path: ["src/assets/certificate_img/fpemula1.jpg"],
+    path: ["/certificate_img/fpemula1.jpg"],
     link: "https://www.dicoding.com/certificates/98XW6MM2LXM3",
   },
   {
     name: "Belajar Fundamental Aplikasi Flutter",
-    path: [
-      "src/assets/certificate_img/ffundamental1.jpg",
-      "src/assets/certificate_img/ffundamental2.jpg",
-    ],
+    path: ["/certificate_img/ffundamental1.jpg"],
     link: "https://www.dicoding.com/certificates/NVP714DD4PR0",
   },
   {
     name: "Menjadi Flutter Developer Expert",
-    path: ["src/assets/certificate_img/fexpert1.jpg"],
+    path: ["/certificate_img/fexpert1.jpg"],
     link: "https://www.dicoding.com/certificates/MEPJLMG4WZ3V",
   },
   {
     name: "Mentor Of MSIB Batch 4",
-    path: ["src/assets/certificate_img/mentor.jpeg"],
+    path: ["/certificate_img/mentor.jpeg"],
     link: "null",
   },
   {
     name: "Meniti Karier sebagai Software Developer",
-    path: ["src/assets/certificate_img/sd.jpg"],
+    path: ["/certificate_img/sd.jpg"],
     link: "https://www.dicoding.com/certificates/KEXL4DQGWXG2",
   },
   {
     name: "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
-    path: ["src/assets/certificate_img/ps.jpg"],
+    path: ["/certificate_img/ps.jpg"],
     link: "https://www.dicoding.com/certificates/L4PQMKW12ZO1",
   },
   {
     name: "Pengenalan ke Logika Pemrograman (Programming Logic 101)",
-    path: ["src/assets/certificate_img/101.jpg"],
+    path: ["/certificate_img/101.jpg"],
     link: "https://www.dicoding.com/certificates/L4PQMKW12ZO1",
   },
   {
     name: "Belajar Dasar Pemrograman JavaScript",
-    path: ["src/assets/certificate_img/javascript/1.jpg"],
+    path: ["/certificate_img/javascript/1.jpg"],
     link: "https://www.dicoding.com/certificates/1RXYM66KMXVM",
   },
   {
     name: "Belajar Membuat Aplikasi Back-End untuk Pemula",
-    path: ["src/assets/certificate_img/backend/1.jpg"],
+    path: ["/certificate_img/backend/1.jpg"],
     link: "https://www.dicoding.com/certificates/L4PQ4Y5GQXO1",
   },
   {
     name: "Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)",
-    path: ["src/assets/certificate_img/aws/1.jpg"],
+    path: ["/certificate_img/aws/1.jpg"],
     link: "https://www.dicoding.com/certificates/0LZ01MGNKP65",
   },
 ];

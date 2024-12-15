@@ -47,7 +47,7 @@ export default function Hero() {
           <Box className={classes.leftHeroBox} marginTop={8}>
             <img
               className={classes.profileImage}
-              src="src/assets/images/photo-profile.png"
+              src="/images/photo-profile.png"
               alt="Yoshua Purba"
             />
 

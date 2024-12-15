@@ -5,15 +5,15 @@
                     "apkLink": "",
                     "name": "Budget Intelli",
                     "path": [
-                              "assets/screenshot/budget-intelli/1.png",
-                              "assets/screenshot/budget-intelli/2.png",
-                              "assets/screenshot/budget-intelli/3.png",
-                              "assets/screenshot/budget-intelli/4.png",
-                              "assets/screenshot/budget-intelli/5.png",
-                              "assets/screenshot/budget-intelli/6.png",
-                              "assets/screenshot/budget-intelli/7.png",
-                              "assets/screenshot/budget-intelli/8.png",
-                              "assets/screenshot/budget-intelli/9.png"
+                              "/screenshot/budget-intelli/1.png",
+                              "/screenshot/budget-intelli/2.png",
+                              "/screenshot/budget-intelli/3.png",
+                              "/screenshot/budget-intelli/4.png",
+                              "/screenshot/budget-intelli/5.png",
+                              "/screenshot/budget-intelli/6.png",
+                              "/screenshot/budget-intelli/7.png",
+                              "/screenshot/budget-intelli/8.png",
+                              "/screenshot/budget-intelli/9.png"
                     ],
                     "description": "Budgeting and Expense Tracker App",
                     "features": "Offline mode, Dark and Light mode, Create budget, category group, category item, transactions, etc",
@@ -34,16 +34,16 @@
                     "apkLink": "",
                     "name": "PLN Click",
                     "path": [
-                              "assets/screenshot/pln_click/1.png",
-                              "assets/screenshot/pln_click/2.png",
-                              "assets/screenshot/pln_click/3.png",
-                              "assets/screenshot/pln_click/4.png",
-                              "assets/screenshot/pln_click/5.png",
-                              "assets/screenshot/pln_click/6.png",
-                              "assets/screenshot/pln_click/7.png",
-                              "assets/screenshot/pln_click/8.png",
-                              "assets/screenshot/pln_click/9.png",
-                              "assets/screenshot/pln_click/10.png"
+                              "/screenshot/pln_click/1.png",
+                              "/screenshot/pln_click/2.png",
+                              "/screenshot/pln_click/3.png",
+                              "/screenshot/pln_click/4.png",
+                              "/screenshot/pln_click/5.png",
+                              "/screenshot/pln_click/6.png",
+                              "/screenshot/pln_click/7.png",
+                              "/screenshot/pln_click/8.png",
+                              "/screenshot/pln_click/9.png",
+                              "/screenshot/pln_click/10.png"
                     ],
                     "description": "Super App for PLN employees throughout Indonesia",
                     "features": "Clock In, Clock Out, View Incoming Letters, Approval, Shift Management, SPPD",
@@ -65,12 +65,12 @@
                     "apkLink": "",
                     "name": "Barista PLN",
                     "path": [
-                              "assets/screenshot/barista/1.png",
-                              "assets/screenshot/barista/2.png",
-                              "assets/screenshot/barista/3.png",
-                              "assets/screenshot/barista/4.png",
-                              "assets/screenshot/barista/5.png",
-                              "assets/screenshot/barista/6.png"
+                              "/screenshot/barista/1.png",
+                              "/screenshot/barista/2.png",
+                              "/screenshot/barista/3.png",
+                              "/screenshot/barista/4.png",
+                              "/screenshot/barista/5.png",
+                              "/screenshot/barista/6.png"
                     ],
                     "description": "PLN Directors Agenda Management",
                     "features": "Login with SSO, Share agenda with Whats Up, Melihat detail agenda",
@@ -90,15 +90,15 @@
                     "apkLink": "",
                     "name": "COLOK.IN",
                     "path": [
-                              "assets/screenshot/colok_in/1.png",
-                              "assets/screenshot/colok_in/2.png",
-                              "assets/screenshot/colok_in/3.png",
-                              "assets/screenshot/colok_in/4.png",
-                              "assets/screenshot/colok_in/5.png",
-                              "assets/screenshot/colok_in/6.png",
-                              "assets/screenshot/colok_in/7.png",
-                              "assets/screenshot/colok_in/8.png",
-                              "assets/screenshot/colok_in/9.png"
+                              "/screenshot/colok_in/1.png",
+                              "/screenshot/colok_in/2.png",
+                              "/screenshot/colok_in/3.png",
+                              "/screenshot/colok_in/4.png",
+                              "/screenshot/colok_in/5.png",
+                              "/screenshot/colok_in/6.png",
+                              "/screenshot/colok_in/7.png",
+                              "/screenshot/colok_in/8.png",
+                              "/screenshot/colok_in/9.png"
                     ],
                     "description": "Tenant Application for SPKLU",
                     "features": "Login, Logout, Session Timeout, Edit password, Add Charger Point, Add Card, Location (Google Map)",
@@ -120,19 +120,19 @@
                     "apkLink": "https://drive.google.com/file/d/1hxcV-jG7eGoSkKmjQYisvxmPbhftPGRK/view?usp=share_link",
                     "name": "PLN Mobile\nClone",
                     "path": [
-                              "assets/screenshot/pln/1.png",
-                              "assets/screenshot/pln/2.png",
-                              "assets/screenshot/pln/3.png",
-                              "assets/screenshot/pln/4.png",
-                              "assets/screenshot/pln/5.png",
-                              "assets/screenshot/pln/6.png",
-                              "assets/screenshot/pln/7.png",
-                              "assets/screenshot/pln/8.png",
-                              "assets/screenshot/pln/9.png",
-                              "assets/screenshot/pln/10.png",
-                              "assets/screenshot/pln/11.png",
-                              "assets/screenshot/pln/12.png",
-                              "assets/screenshot/pln/13.png"
+                              "/screenshot/pln/1.png",
+                              "/screenshot/pln/2.png",
+                              "/screenshot/pln/3.png",
+                              "/screenshot/pln/4.png",
+                              "/screenshot/pln/5.png",
+                              "/screenshot/pln/6.png",
+                              "/screenshot/pln/7.png",
+                              "/screenshot/pln/8.png",
+                              "/screenshot/pln/9.png",
+                              "/screenshot/pln/10.png",
+                              "/screenshot/pln/11.png",
+                              "/screenshot/pln/12.png",
+                              "/screenshot/pln/13.png"
                     ],
                     "description": "Cloning Application using Screenshot",
                     "features": "Onboarding, Sign In, Lupa Password, Sign Up, Home, Profile, Detail Screen",
@@ -155,14 +155,14 @@
                     "apkLink": "",
                     "name": "Tempat Makan",
                     "path": [
-                              "assets/screenshot/tempat_makan/1.png",
-                              "assets/screenshot/tempat_makan/2.png",
-                              "assets/screenshot/tempat_makan/3.png",
-                              "assets/screenshot/tempat_makan/4.png",
-                              "assets/screenshot/tempat_makan/5.png",
-                              "assets/screenshot/tempat_makan/6.png",
-                              "assets/screenshot/tempat_makan/7.png",
-                              "assets/screenshot/tempat_makan/8.png"
+                              "/screenshot/tempat_makan/1.png",
+                              "/screenshot/tempat_makan/2.png",
+                              "/screenshot/tempat_makan/3.png",
+                              "/screenshot/tempat_makan/4.png",
+                              "/screenshot/tempat_makan/5.png",
+                              "/screenshot/tempat_makan/6.png",
+                              "/screenshot/tempat_makan/7.png",
+                              "/screenshot/tempat_makan/8.png"
                     ],
                     "description": "Restaurant listing application",
                     "features": "Sign In, Onboarding, Home, Search, Profile, Detail Screen, Review tab, dan Add review",
@@ -182,8 +182,8 @@
                     "apkLink": "https://drive.google.com/file/d/1EJcDGXYieQM6wXZlp7XJKiqmNMTnjQPx/view?usp=share_link",
                     "name": "DANA Clone",
                     "path": [
-                              "assets/screenshot/dana/1.png",
-                              "assets/screenshot/dana/2.png"
+                              "/screenshot/dana/1.png",
+                              "/screenshot/dana/2.png"
                     ],
                     "description": "Cloning Application using Screenshot",
                     "features": "Home Screen",
@@ -204,9 +204,9 @@
                     "apkLink": "https://drive.google.com/file/d/1Cth62npCWK92JNoYnHtD3BDsfNRC23-E/view?usp=share_link",
                     "name": "Alterra Chat",
                     "path": [
-                              "assets/screenshot/alterra/1.png",
-                              "assets/screenshot/alterra/2.png",
-                              "assets/screenshot/alterra/3.png"
+                              "/screenshot/alterra/1.png",
+                              "/screenshot/alterra/2.png",
+                              "/screenshot/alterra/3.png"
                     ],
                     "description": "Real-time messaging application",
                     "features": "Sign In, Sign Up, Chat Room, and Sign Out screen",
@@ -227,8 +227,8 @@
                     "apkLink": "https://drive.google.com/file/d/1HD3EOsVxz9n8bfsFPrucs5BaefQ6YVsc/view?usp=share_link",
                     "name": "Ebook",
                     "path": [
-                              "assets/screenshot/ebook/1.png",
-                              "assets/screenshot/ebook/2.png"
+                              "/screenshot/ebook/1.png",
+                              "/screenshot/ebook/2.png"
                     ],
                     "description": "Slicing dari design Figma",
                     "features": "Home and Detail Screen",
@@ -247,8 +247,8 @@
                     "apkLink": "https://drive.google.com/file/d/1Tmjj2mEuaFBlRRsV-PT-tCumqogL6Nfz/view?usp=share_link",
                     "name": "Food App",
                     "path": [
-                              "assets/screenshot/food_app/1.png",
-                              "assets/screenshot/food_app/2.png"
+                              "/screenshot/food_app/1.png",
+                              "/screenshot/food_app/2.png"
                     ],
                     "description": "Slicing dari design Figma",
                     "features": "Home and Detail Screen",
@@ -267,9 +267,9 @@
                     "apkLink": "https://drive.google.com/file/d/1KGGRdlA_2hxWg8aJdpGHG0VvidLVGlIC/view?usp=share_link",
                     "name": "Saving App",
                     "path": [
-                              "assets/screenshot/saving/1.png",
-                              "assets/screenshot/saving/2.png",
-                              "assets/screenshot/saving/3.png"
+                              "/screenshot/saving/1.png",
+                              "/screenshot/saving/2.png",
+                              "/screenshot/saving/3.png"
                     ],
                     "description": "Slicing from Figma design",
                     "features": "Onboarding, Home and Portfolio Screen",
@@ -287,7 +287,7 @@
                     "apkLink": "https://drive.google.com/file/d/1JeylQCsM9cycDAKnxG-0hrzZ_KiAYlar/view?usp=share_link",
                     "name": "Telkomsel App\nClone",
                     "path": [
-                              "assets/screenshot/telkomsel/1.png"
+                              "/screenshot/telkomsel/1.png"
                     ],
                     "description": "Cloning Application using Screenshot",
                     "features": "Home Screen",
@@ -305,8 +305,8 @@
                     "apkLink": "",
                     "name": "Udemy Course",
                     "path": [
-                              "assets/screenshot/udemy/1.png",
-                              "assets/screenshot/udemy/2.png"
+                              "/screenshot/udemy/1.png",
+                              "/screenshot/udemy/2.png"
                     ],
                     "description": "Creating video tutorials about application development using Flutter",
                     "features": "Screen video capture, audio explanation",

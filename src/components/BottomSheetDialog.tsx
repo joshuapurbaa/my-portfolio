@@ -91,7 +91,7 @@ const BottomSheetDialog: React.FC<BottomSheetDialogProps> = ({
               }}
             >
               <img
-                src={`src/${path}`}
+                src={path}
                 alt={title}
                 style={{ maxWidth: "100%", maxHeight: "100%" }}
               />
