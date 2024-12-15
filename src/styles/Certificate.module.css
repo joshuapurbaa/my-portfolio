@@ -1,0 +1,43 @@
+#certificate {
+  padding-top: 10px;
+}
+
+#certificate .carousel .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#certificate .carousel .control-arrow {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+#certificate .carousel .control-arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#certificate .carousel .carousel-status {
+  display: none;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  #certificate .carousel .slide {
+    flex: 1 1 calc(100% / 3);
+  }
+}
+
+/* Tablet */
+@media (min-width: 464px) and (max-width: 1023px) {
+  #certificate .carousel .slide {
+    flex: 1 1 calc(100% / 2);
+  }
+}
+
+/* Mobile */
+@media (max-width: 463px) {
+  #certificate .carousel .slide {
+    flex: 1 1 100%;
+  }
+}

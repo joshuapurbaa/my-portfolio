@@ -1,0 +1,321 @@
+[
+          {
+                    "id": 1,
+                    "githubLink": "https://github.com/joshuapurbaa/budget_intelli",
+                    "apkLink": "",
+                    "name": "Budget Intelli",
+                    "path": [
+                              "assets/screenshot/budget-intelli/1.png",
+                              "assets/screenshot/budget-intelli/2.png",
+                              "assets/screenshot/budget-intelli/3.png",
+                              "assets/screenshot/budget-intelli/4.png",
+                              "assets/screenshot/budget-intelli/5.png",
+                              "assets/screenshot/budget-intelli/6.png",
+                              "assets/screenshot/budget-intelli/7.png",
+                              "assets/screenshot/budget-intelli/8.png",
+                              "assets/screenshot/budget-intelli/9.png"
+                    ],
+                    "description": "Budgeting and Expense Tracker App",
+                    "features": "Offline mode, Dark and Light mode, Create budget, category group, category item, transactions, etc",
+                    "tags": [
+                              "From scratch",
+                              "Self Project",
+                              "BLOC",
+                              "Clean Architecture",
+                              "Local Storage"
+                    ],
+                    "otherLink": "",
+                    "playstoreLink": "https://play.google.com/store/apps/details?id=com.porseatechnology.budgetIntelli",
+                    "appstoreLink": ""
+          },
+          {
+                    "id": 2,
+                    "githubLink": "",
+                    "apkLink": "",
+                    "name": "PLN Click",
+                    "path": [
+                              "assets/screenshot/pln_click/1.png",
+                              "assets/screenshot/pln_click/2.png",
+                              "assets/screenshot/pln_click/3.png",
+                              "assets/screenshot/pln_click/4.png",
+                              "assets/screenshot/pln_click/5.png",
+                              "assets/screenshot/pln_click/6.png",
+                              "assets/screenshot/pln_click/7.png",
+                              "assets/screenshot/pln_click/8.png",
+                              "assets/screenshot/pln_click/9.png",
+                              "assets/screenshot/pln_click/10.png"
+                    ],
+                    "description": "Super App for PLN employees throughout Indonesia",
+                    "features": "Clock In, Clock Out, View Incoming Letters, Approval, Shift Management, SPPD",
+                    "tags": [
+                              "enhance",
+                              "deploy to appstore",
+                              "fix bugs",
+                              "deploy to playstore",
+                              "add features",
+                              "integrasi API"
+                    ],
+                    "otherLink": "",
+                    "playstoreLink": "https://play.google.com/store/apps/details?id=com.icon.plnclick",
+                    "appstoreLink": "https://apps.apple.com/us/app/pln-click/id1669242441"
+          },
+          {
+                    "id": 3,
+                    "githubLink": "",
+                    "apkLink": "",
+                    "name": "Barista PLN",
+                    "path": [
+                              "assets/screenshot/barista/1.png",
+                              "assets/screenshot/barista/2.png",
+                              "assets/screenshot/barista/3.png",
+                              "assets/screenshot/barista/4.png",
+                              "assets/screenshot/barista/5.png",
+                              "assets/screenshot/barista/6.png"
+                    ],
+                    "description": "PLN Directors Agenda Management",
+                    "features": "Login with SSO, Share agenda with Whats Up, Melihat detail agenda",
+                    "tags": [
+                              "enhance",
+                              "deploy to appstore",
+                              "fix bugs",
+                              "deploy to playstore"
+                    ],
+                    "otherLink": "",
+                    "playstoreLink": "https://play.google.com/store/apps/details?id=id.co.pln.barista",
+                    "appstoreLink": "https://apps.apple.com/us/app/barista-pln/id6502890885"
+          },
+          {
+                    "id": 4,
+                    "githubLink": "",
+                    "apkLink": "",
+                    "name": "COLOK.IN",
+                    "path": [
+                              "assets/screenshot/colok_in/1.png",
+                              "assets/screenshot/colok_in/2.png",
+                              "assets/screenshot/colok_in/3.png",
+                              "assets/screenshot/colok_in/4.png",
+                              "assets/screenshot/colok_in/5.png",
+                              "assets/screenshot/colok_in/6.png",
+                              "assets/screenshot/colok_in/7.png",
+                              "assets/screenshot/colok_in/8.png",
+                              "assets/screenshot/colok_in/9.png"
+                    ],
+                    "description": "Tenant Application for SPKLU",
+                    "features": "Login, Logout, Session Timeout, Edit password, Add Charger Point, Add Card, Location (Google Map)",
+                    "tags": [
+                              "enhance",
+                              "refactor code",
+                              "BLOC",
+                              "fix bugs",
+                              "add features",
+                              "integrasi API"
+                    ],
+                    "otherLink": "",
+                    "playstoreLink": "",
+                    "appstoreLink": ""
+          },
+          {
+                    "id": 5,
+                    "githubLink": "https://github.com/joshuapurbaa/pln_mobile_clone",
+                    "apkLink": "https://drive.google.com/file/d/1hxcV-jG7eGoSkKmjQYisvxmPbhftPGRK/view?usp=share_link",
+                    "name": "PLN Mobile\nClone",
+                    "path": [
+                              "assets/screenshot/pln/1.png",
+                              "assets/screenshot/pln/2.png",
+                              "assets/screenshot/pln/3.png",
+                              "assets/screenshot/pln/4.png",
+                              "assets/screenshot/pln/5.png",
+                              "assets/screenshot/pln/6.png",
+                              "assets/screenshot/pln/7.png",
+                              "assets/screenshot/pln/8.png",
+                              "assets/screenshot/pln/9.png",
+                              "assets/screenshot/pln/10.png",
+                              "assets/screenshot/pln/11.png",
+                              "assets/screenshot/pln/12.png",
+                              "assets/screenshot/pln/13.png"
+                    ],
+                    "description": "Cloning Application using Screenshot",
+                    "features": "Onboarding, Sign In, Lupa Password, Sign Up, Home, Profile, Detail Screen",
+                    "tags": [
+                              "from scratch",
+                              "clone",
+                              "clean architecture",
+                              "provider",
+                              "advance ui",
+                              "shared preferances",
+                              "dependency injection"
+                    ],
+                    "otherLink": "",
+                    "playstoreLink": "",
+                    "appstoreLink": ""
+          },
+          {
+                    "id": 6,
+                    "githubLink": "https://github.com/joshuapurbaa/tempat-makan",
+                    "apkLink": "",
+                    "name": "Tempat Makan",
+                    "path": [
+                              "assets/screenshot/tempat_makan/1.png",
+                              "assets/screenshot/tempat_makan/2.png",
+                              "assets/screenshot/tempat_makan/3.png",
+                              "assets/screenshot/tempat_makan/4.png",
+                              "assets/screenshot/tempat_makan/5.png",
+                              "assets/screenshot/tempat_makan/6.png",
+                              "assets/screenshot/tempat_makan/7.png",
+                              "assets/screenshot/tempat_makan/8.png"
+                    ],
+                    "description": "Restaurant listing application",
+                    "features": "Sign In, Onboarding, Home, Search, Profile, Detail Screen, Review tab, dan Add review",
+                    "tags": [
+                              "from scratch",
+                              "clean architecture",
+                              "provider",
+                              "Api"
+                    ],
+                    "otherLink": "",
+                    "playstoreLink": "",
+                    "appstoreLink": ""
+          },
+          {
+                    "id": 7,
+                    "githubLink": "https://github.com/joshuapurbaa/dana_clone",
+                    "apkLink": "https://drive.google.com/file/d/1EJcDGXYieQM6wXZlp7XJKiqmNMTnjQPx/view?usp=share_link",
+                    "name": "DANA Clone",
+                    "path": [
+                              "assets/screenshot/dana/1.png",
+                              "assets/screenshot/dana/2.png"
+                    ],
+                    "description": "Cloning Application using Screenshot",
+                    "features": "Home Screen",
+                    "tags": [
+                              "from scratch",
+                              "cloning app",
+                              "advance layout",
+                              "animations",
+                              "external package"
+                    ],
+                    "otherLink": "",
+                    "playstoreLink": "",
+                    "appstoreLink": ""
+          },
+          {
+                    "id": 8,
+                    "githubLink": "https://github.com/joshuapurbaa/alterra_chat",
+                    "apkLink": "https://drive.google.com/file/d/1Cth62npCWK92JNoYnHtD3BDsfNRC23-E/view?usp=share_link",
+                    "name": "Alterra Chat",
+                    "path": [
+                              "assets/screenshot/alterra/1.png",
+                              "assets/screenshot/alterra/2.png",
+                              "assets/screenshot/alterra/3.png"
+                    ],
+                    "description": "Real-time messaging application",
+                    "features": "Sign In, Sign Up, Chat Room, and Sign Out screen",
+                    "tags": [
+                              "from scratch",
+                              "firebase",
+                              "authentication",
+                              "cloud firestore",
+                              "provider"
+                    ],
+                    "otherLink": "",
+                    "playstoreLink": "",
+                    "appstoreLink": ""
+          },
+          {
+                    "id": 9,
+                    "githubLink": "https://github.com/joshuapurbaa/e_book_app",
+                    "apkLink": "https://drive.google.com/file/d/1HD3EOsVxz9n8bfsFPrucs5BaefQ6YVsc/view?usp=share_link",
+                    "name": "Ebook",
+                    "path": [
+                              "assets/screenshot/ebook/1.png",
+                              "assets/screenshot/ebook/2.png"
+                    ],
+                    "description": "Slicing dari design Figma",
+                    "features": "Home and Detail Screen",
+                    "tags": [
+                              "from scratch",
+                              "animations",
+                              "basic layout"
+                    ],
+                    "otherLink": "",
+                    "playstoreLink": "",
+                    "appstoreLink": ""
+          },
+          {
+                    "id": 10,
+                    "githubLink": "https://github.com/joshuapurbaa/food_app",
+                    "apkLink": "https://drive.google.com/file/d/1Tmjj2mEuaFBlRRsV-PT-tCumqogL6Nfz/view?usp=share_link",
+                    "name": "Food App",
+                    "path": [
+                              "assets/screenshot/food_app/1.png",
+                              "assets/screenshot/food_app/2.png"
+                    ],
+                    "description": "Slicing dari design Figma",
+                    "features": "Home and Detail Screen",
+                    "tags": [
+                              "from scratch",
+                              "intermediate layout",
+                              "provider"
+                    ],
+                    "otherLink": "",
+                    "playstoreLink": "",
+                    "appstoreLink": ""
+          },
+          {
+                    "id": 11,
+                    "githubLink": "https://github.com/joshuapurbaa/saving_app",
+                    "apkLink": "https://drive.google.com/file/d/1KGGRdlA_2hxWg8aJdpGHG0VvidLVGlIC/view?usp=share_link",
+                    "name": "Saving App",
+                    "path": [
+                              "assets/screenshot/saving/1.png",
+                              "assets/screenshot/saving/2.png",
+                              "assets/screenshot/saving/3.png"
+                    ],
+                    "description": "Slicing from Figma design",
+                    "features": "Onboarding, Home and Portfolio Screen",
+                    "tags": [
+                              "from scratch",
+                              "advance layout"
+                    ],
+                    "otherLink": "",
+                    "playstoreLink": "",
+                    "appstoreLink": ""
+          },
+          {
+                    "id": 12,
+                    "githubLink": "https://github.com/joshuapurbaa/telkomsel-app-clone",
+                    "apkLink": "https://drive.google.com/file/d/1JeylQCsM9cycDAKnxG-0hrzZ_KiAYlar/view?usp=share_link",
+                    "name": "Telkomsel App\nClone",
+                    "path": [
+                              "assets/screenshot/telkomsel/1.png"
+                    ],
+                    "description": "Cloning Application using Screenshot",
+                    "features": "Home Screen",
+                    "tags": [
+                              "from scratch",
+                              "advance layout"
+                    ],
+                    "otherLink": "",
+                    "playstoreLink": "",
+                    "appstoreLink": ""
+          },
+          {
+                    "id": 13,
+                    "githubLink": "",
+                    "apkLink": "",
+                    "name": "Udemy Course",
+                    "path": [
+                              "assets/screenshot/udemy/1.png",
+                              "assets/screenshot/udemy/2.png"
+                    ],
+                    "description": "Creating video tutorials about application development using Flutter",
+                    "features": "Screen video capture, audio explanation",
+                    "tags": [
+                              "courses",
+                              "tutorial"
+                    ],
+                    "otherLink": "https://www.udemy.com/course/flutter-redindwhite-academy-by-joshua/?instructorPreviewMode=guest",
+                    "playstoreLink": "",
+                    "appstoreLink": ""
+          }
+]
