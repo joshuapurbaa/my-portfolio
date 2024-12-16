@@ -5,7 +5,7 @@ import { Link as ScrollLink } from "react-scroll";
 const useStyles = makeStyles(() => ({
   heroContainer: {
     display: "flex",
-    height: "70vh",
+    height: "100vh",
   },
   leftHeroBox: {
     display: "flex",
@@ -25,6 +25,7 @@ const useStyles = makeStyles(() => ({
   },
   subTitle: {
     fontWeight: "bold",
+    paddingTop: "16px",
   },
   rightHero: {
     display: "flex",
