@@ -42,7 +42,7 @@ export default function Projects() {
       <Typography variant="h4" component="h2" gutterBottom>
         Projects
       </Typography>
-      <Grid2 container spacing={4}>
+      <Grid2 container spacing={4} justifyContent="center">
         {projects &&
           projects.map((project: ProjectType, index: number) => {
             return (
