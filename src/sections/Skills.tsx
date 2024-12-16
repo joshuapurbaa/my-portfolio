@@ -41,10 +41,10 @@ export default function Skills() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                height: "100px",
+                height: "80px",
               }}
             >
-              <Typography variant="h6">{skill}</Typography>
+              <Typography variant="body1">{skill}</Typography>
             </Paper>
           </Grid>
         ))}

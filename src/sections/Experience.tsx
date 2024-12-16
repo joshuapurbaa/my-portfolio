@@ -75,9 +75,25 @@ export default function Experience() {
               }}
             >
               <CardContent style={{ flex: 1 }}>
-                <Typography variant="h6">{exp.company}</Typography>
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: "bold",
+                    color: "primary.main",
+                  }}
+                >
+                  {exp.company}
+                </Typography>
                 <Typography variant="subtitle1">{exp.period}</Typography>
-                <Typography variant="body1">{exp.role}</Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    fontWeight: "bold",
+                    color: "secondary.main",
+                  }}
+                >
+                  {exp.role}
+                </Typography>
                 <List>
                   {exp.tasks.map((task, idx) => (
                     <ListItem key={idx}>

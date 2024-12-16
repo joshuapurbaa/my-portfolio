@@ -54,7 +54,7 @@ export default function Projects() {
                     transform: "scale(1.05)",
                     transition: "transform 0.3s ease-in-out",
                   },
-                  width: 300,
+                  width: 260,
                   height: 300,
                   display: "flex",
                   flexDirection: "column",

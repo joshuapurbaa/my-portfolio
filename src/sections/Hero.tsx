@@ -11,29 +11,31 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     alignItems: "left",
     flexDirection: "column",
-    gap: "24px", // Converted from 1.5rem
+    gap: "24px",
   },
   profileImage: {
-    width: "200px",
-    height: "200px",
+    width: "300px",
+    height: "300px",
     borderRadius: "50%",
-    marginRight: "24px", // Converted from 1.5rem
+    marginRight: "24px",
   },
   nameTitle: {
     fontWeight: "bold",
     marginBottom: "8px",
   },
-  subTitle: {},
+  subTitle: {
+    fontWeight: "bold",
+  },
   rightHero: {
     display: "flex",
-    gap: "24px", // Converted from 1.5rem
+    gap: "24px",
     flexDirection: "column",
     alignItems: "flex-end",
   },
   buttonHero: {
     display: "flex",
-    gap: "24px", // Converted from 1.5rem
-    marginTop: "16px", // Add margin to separate buttons from subtitle
+    gap: "24px",
+    marginTop: "16px",
   },
 }));
 
@@ -58,7 +60,7 @@ export default function Hero() {
         </Grid>
         <Grid item xs={12} sm={8}>
           <Box className={classes.rightHero}>
-            <Typography className={classes.subTitle} fontSize={20}>
+            <Typography className={classes.subTitle} fontSize={35}>
               A Frontend Developer based in Jakarta, Indonesia.
             </Typography>
             <Box className={classes.buttonHero}>
