@@ -10,14 +10,13 @@ import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { Container } from "@mui/material";
+import useResponsive from "../hooks/useResponsive";
 
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
-  const isMobile = useMediaQuery("(max-width:600px)"); // Cek apakah layar berukuran mobile
-  const isTablet = useMediaQuery("(min-width:601px) and (max-width:1024px)"); // Cek apakah layar berukuran tablet
+  const { isMobile, isTablet } = useResponsive();
 
   const toggleDrawer = (open: boolean) => () => {
     setDrawerOpen(open);

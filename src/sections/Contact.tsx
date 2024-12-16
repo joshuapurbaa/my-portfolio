@@ -1,15 +1,14 @@
-import { Container, Typography, Box, useMediaQuery } from "@mui/material";
+import { Container, Typography, Box } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import DownloadIcon from "@mui/icons-material/GetApp";
 import { EmailOutlined } from "@mui/icons-material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ContactButton from "../components/ContactButton";
+import useResponsive from "../hooks/useResponsive";
 
 export default function Contact() {
-  const isMobile = useMediaQuery("(max-width:600px)");
-  const isTablet = useMediaQuery("(min-width:601px) and (max-width:1024px)");
-
+  const { isMobile, isTablet } = useResponsive();
   return (
     <Container
       id="contact"

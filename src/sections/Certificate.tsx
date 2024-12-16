@@ -1,8 +1,9 @@
-import { Box, Container, Typography, useMediaQuery } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styles from "../styles/Certificate.module.css";
+import useResponsive from "../hooks/useResponsive";
 
 const certificateData = [
   {
@@ -69,8 +70,7 @@ export default function Certificate() {
     setCurrentIndex(index);
   };
 
-  const isMobile = useMediaQuery("(max-width:600px)");
-  const isTablet = useMediaQuery("(min-width:601px) and (max-width:1024px)");
+  const { isMobile, isTablet } = useResponsive();
 
   const arrowStyles: React.CSSProperties = {
     position: "absolute",
