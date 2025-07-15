@@ -30,7 +30,7 @@ export default function Hero() {
                   color: 'white'
                 }}
               >
-                <span style={{ color: '#a78bfa' }}>Front</span>end<br />
+                <span style={{ color: '#a78bfa' }}>Flutter</span><br />
                 Developer
               </Typography>
 
@@ -45,7 +45,7 @@ export default function Hero() {
                   maxWidth: '500px'
                 }}
               >
-                I'm a frontend developer based in Jakarta, I'll help you build beautiful websites your users will love.
+                I'm a Flutter developer based in Jakarta, I'll help you build beautiful mobile applications your users will love.
               </Typography>
 
               <Box sx={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>

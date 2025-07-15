@@ -1,29 +1,21 @@
 import { Container, Grid, Typography, Box } from "@mui/material";
 
 const skillsData = {
-  "Web Design": [
-    "UI/UX Design",
-    "Responsive Design",
-    "Wireframing",
-    "User Research"
-  ],
+  
   "Frontend": [
     "Javascript",
+    "Typescript",
     "ReactJS",
     "NextJS",
-    "CSS3"
+    "CSS",
+    "TailwindCSS",
+    "Material UI",
   ],
-  "Backend": [
-    "Node.js",
-    "MongoDB",
-    "ExpressJS",
-    "Vercel"
-  ],
+ 
   "Soft Skills": [
     "Effective communication",
     "Collaboration",
     "Commitment",
-    "Leadership"
   ]
 };
 

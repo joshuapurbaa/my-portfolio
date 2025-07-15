@@ -33,7 +33,7 @@ export default function Footer() {
               marginBottom: '16px'
             }}
           >
-            Frontend Developer passionate about creating beautiful and functional digital experiences.
+            Flutter Developer passionate about creating beautiful and functional mobile applications.
           </Typography>
           <Typography 
             variant="body2" 

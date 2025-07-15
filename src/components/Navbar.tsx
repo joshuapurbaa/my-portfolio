@@ -57,7 +57,7 @@ export default function Navbar() {
                 duration={500}
                 style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }}
               >
-                YoshuaDCZ.
+                YoshuaPurba.
               </ScrollLink>
             </Typography>
 

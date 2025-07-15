@@ -5,7 +5,7 @@ const experiences = [
   {
     company: "Bank Raya",
     period: "Aug 2024 - Present",
-    role: "Front End Developer",
+    role: "Flutter Developer",
     tasks: [
       "Expanding Features in Current Mobile Applications (Flutter) and Webview (NextJS)",
       "Mobile Apps: Bank Raya"
@@ -135,7 +135,7 @@ export default function Experience() {
                       marginBottom: '8px'
                     }}
                   >
-                    Engineer @ {exp.company}
+                    {exp.role} @ {exp.company}
                   </Typography>
                   
                   <Typography
