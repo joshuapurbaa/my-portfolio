@@ -5,7 +5,7 @@ const experiences = [
   {
     company: "Bank Raya",
     period: "Aug 2024 - Present",
-    role: "Flutter Developer",
+    role: "Frontend Developer",
     tasks: [
       "Expanding Features in Current Mobile Applications (Flutter) and Webview (NextJS)",
       "Mobile Apps: Bank Raya"

@@ -23,7 +23,7 @@ export default function Footer() {
               fontSize: '1.1rem'
             }}
           >
-            YoshuaDCZ.
+            YoshuaPurba.
           </Typography>
           <Typography 
             variant="body2" 

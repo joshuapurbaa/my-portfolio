@@ -1,21 +1,40 @@
 import { Container, Grid, Typography, Box } from "@mui/material";
 
 const skillsData = {
-  
+  "Mobile Development": [
+    "Flutter and Dart",
+    "Slicing Design to Flutter Code",
+    "State Management (Provider, BLOC)",
+    "Firebase (Auth, Firestore, Storage)",
+    "API Integration (http, dio, Postman)",
+    "Local Storage (SQFLITE & SP)",
+    "Publishing App to Playstore and Appstore"
+  ],
   "Frontend": [
     "Javascript",
     "Typescript",
     "ReactJS",
     "NextJS",
+    "HTML",
     "CSS",
     "TailwindCSS",
-    "Material UI",
+    "Material UI"
   ],
- 
+  "Backend & Tools": [
+    "Node.js",
+    "Git, GitHub, GitLab",
+    "Postman",
+    "Jira, Gather",
+    "Github Copilot"
+  ],
   "Soft Skills": [
     "Effective communication",
-    "Collaboration",
+    "Collaboration", 
     "Commitment",
+    "Leadership",
+    "Problem Solving",
+    "Team Player",
+    "Clean Architecture, Clean Code"
   ]
 };
 
@@ -79,7 +98,7 @@ export default function Skills() {
           ))}
         </Grid>
 
-        {/* Additional Flutter/Mobile Skills Section */}
+        {/* Additional Technical Skills */}
         <Box sx={{ marginTop: '48px' }}>
           <Typography 
             variant="h4" 
@@ -91,35 +110,29 @@ export default function Skills() {
               textAlign: 'center'
             }}
           >
-            Mobile Development Expertise
+            Technical Expertise
           </Typography>
           
-          <Grid container spacing={3}>
+          <Grid container spacing={3} justifyContent="center">
             {[
-              "Flutter and Dart",
-              "Slicing Design to Flutter Code",
               "Object Oriented Programming",
-              "Data Structures and Algorithms",
-              "Clean Architecture, Clean Code",
-              "Local Storage (SQFLITE & SP)",
-              "State Management (Provider, BLOC)",
-              "Firebase (Auth, Firestore, Storage)",
-              "API Integration (http, dio, Postman)",
+              "Data Structures and Algorithms", 
               "AI Integration (Gemini)",
-              "Git, GitHub, GitLab",
-              "Working with team (Jira, Gather)",
-              "Working with AI (Github Copilot)",
-              "Publishing App to Playstore and Appstore"
+              "Clean Architecture"
             ].map((skill, index) => (
-              <Grid item xs={12} sm={6} md={4} key={index}>
+              <Grid item xs={12} sm={6} md={3} key={index}>
                 <Box
                   sx={{
                     background: 'rgba(255, 255, 255, 0.8)',
                     borderRadius: '12px',
-                    padding: '16px',
+                    padding: '20px',
                     textAlign: 'center',
                     border: '1px solid rgba(102, 126, 234, 0.1)',
                     transition: 'all 0.3s ease',
+                    minHeight: '80px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
                     '&:hover': {
                       background: 'rgba(102, 126, 234, 0.1)',
                       transform: 'translateY(-4px)',
