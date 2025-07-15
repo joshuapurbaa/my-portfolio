@@ -1,28 +1,16 @@
-import {
-  Container,
-  Typography,
-  List,
-  ListItem,
-  ListItemText,
-  Grid,
-  Card,
-  CardContent,
-  ListItemIcon,
-} from "@mui/material";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Container, Typography, Box, Grid } from "@mui/material";
 
-const cardStyle = { flex: 1, display: "flex" };
-const listItemIconStyle = { minWidth: 30, marginRight: 1, marginLeft: -3 };
-
+// Updated experiences with Yoshua Purba's actual work history
 const experiences = [
   {
     company: "Bank Raya",
-    period: "Aug 2024 - Current",
-    role: "Frontend Developer (Flutter, NextJs)",
+    period: "Aug 2024 - Present",
+    role: "Front End Developer",
     tasks: [
-      "Expanding Features in Current Mobile Applications (Flutter) and Webview (NextJs)",
-      "Mobile Apps: Bank Raya",
+      "Expanding Features in Current Mobile Applications (Flutter) and Webview (NextJS)",
+      "Mobile Apps: Bank Raya"
     ],
+    highlighted: true
   },
   {
     company: "PT. PLN Icon Plus",
@@ -31,8 +19,9 @@ const experiences = [
     tasks: [
       "Implementing New Features for Existing Mobile Apps",
       "Fixing Bugs and Enhancement",
-      "Mobile Apps: PLN Click, Barista PLN, COLOK.IN",
+      "Apps: PLN Click, Barista PLN, COLOK.IN"
     ],
+    highlighted: false
   },
   {
     company: "Alterra Academy",
@@ -41,74 +30,171 @@ const experiences = [
     tasks: [
       "Make learning materials about mobile application development using Flutter and Dart.",
       "Record a video presentation of the material.",
-      "Conduct live sessions for the mentee.",
+      "Conduct live sessions for the mentee."
     ],
-  },
+    highlighted: false
+  }
 ];
 
 export default function Experience() {
   return (
-    <Container id="experience" sx={{ paddingTop: 10 }}>
-      <Typography variant="h4" gutterBottom>
-        Working Experience
-      </Typography>
+    <section id="experience" className="section-container">
+      <Container maxWidth="lg">
+        <Typography 
+          variant="h2" 
+          sx={{
+            fontSize: { xs: '2.5rem', sm: '3rem', md: '4rem' },
+            fontWeight: 700,
+            marginBottom: '48px',
+            color: '#333'
+          }}
+        >
+          Experience<span style={{ color: '#667eea' }}>.</span>
+        </Typography>
 
-      <Grid container spacing={4}>
-        {experiences.map((exp, index) => (
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            md={4}
-            key={index}
-            style={{ display: "flex" }}
-          >
-            <Card
-              style={cardStyle}
-              sx={{
-                boxShadow: 3,
-                "&:hover": {
-                  boxShadow: 6,
-                  transform: "scale(1.05)",
-                  transition: "transform 0.3s ease-in-out",
-                },
-              }}
-            >
-              <CardContent style={{ flex: 1 }}>
-                <Typography
-                  variant="h6"
+        <Grid container spacing={4}>
+          {/* Timeline sidebar */}
+          <Grid item xs={12} md={4}>
+            <Box sx={{ position: 'sticky', top: '100px' }}>
+              {experiences.map((exp, index) => (
+                <Box
+                  key={index}
                   sx={{
-                    fontWeight: "bold",
-                    color: "primary.main",
+                    display: 'flex',
+                    alignItems: 'center',
+                    marginBottom: '24px',
+                    cursor: 'pointer',
+                    padding: '16px',
+                    borderRadius: '12px',
+                    transition: 'all 0.3s ease',
+                    background: exp.highlighted ? '#667eea' : 'rgba(255, 255, 255, 0.8)',
+                    color: exp.highlighted ? 'white' : '#333',
+                    '&:hover': {
+                      background: exp.highlighted ? '#5a67d8' : 'rgba(102, 126, 234, 0.1)',
+                      transform: 'translateX(8px)',
+                    }
                   }}
                 >
-                  {exp.company}
-                </Typography>
-                <Typography variant="subtitle1">{exp.period}</Typography>
-                <Typography
-                  variant="body1"
-                  sx={{
-                    fontWeight: "bold",
-                    color: "secondary.main",
-                  }}
-                >
-                  {exp.role}
-                </Typography>
-                <List>
-                  {exp.tasks.map((task, idx) => (
-                    <ListItem key={idx}>
-                      <ListItemIcon sx={listItemIconStyle}>
-                        <ArrowForwardIcon fontSize="small" />
-                      </ListItemIcon>
-                      <ListItemText primary={task} />
-                    </ListItem>
-                  ))}
-                </List>
-              </CardContent>
-            </Card>
+                  <Box
+                    sx={{
+                      width: '12px',
+                      height: '12px',
+                      borderRadius: '50%',
+                      background: exp.highlighted ? 'white' : '#667eea',
+                      marginRight: '16px',
+                      flexShrink: 0
+                    }}
+                  />
+                  <Box>
+                    <Typography
+                      variant="h6"
+                      sx={{
+                        fontWeight: 600,
+                        fontSize: '1rem',
+                        marginBottom: '4px'
+                      }}
+                    >
+                      {exp.company}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      sx={{
+                        opacity: 0.8,
+                        fontSize: '0.9rem'
+                      }}
+                    >
+                      {exp.period}
+                    </Typography>
+                  </Box>
+                </Box>
+              ))}
+            </Box>
           </Grid>
-        ))}
-      </Grid>
-    </Container>
+
+          {/* Experience details */}
+          <Grid item xs={12} md={8}>
+            <Box sx={{ paddingLeft: { md: '32px' } }}>
+              {experiences.map((exp, index) => (
+                <Box
+                  key={index}
+                  className="experience-item"
+                  sx={{
+                    marginBottom: '32px',
+                    opacity: exp.highlighted ? 1 : 0.8,
+                    transform: exp.highlighted ? 'scale(1.02)' : 'scale(1)',
+                    transition: 'all 0.3s ease'
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    className="experience-company"
+                    sx={{
+                      fontSize: '1.3rem',
+                      fontWeight: 600,
+                      color: '#667eea',
+                      marginBottom: '8px'
+                    }}
+                  >
+                    Engineer @ {exp.company}
+                  </Typography>
+                  
+                  <Typography
+                    variant="body2"
+                    className="experience-period"
+                    sx={{
+                      color: '#888',
+                      fontSize: '0.9rem',
+                      marginBottom: '16px'
+                    }}
+                  >
+                    {exp.period}
+                  </Typography>
+
+                  <ul className="experience-tasks">
+                    {exp.tasks.map((task, taskIndex) => (
+                      <li key={taskIndex}>
+                        <Typography
+                          variant="body1"
+                          sx={{
+                            fontSize: '0.95rem',
+                            lineHeight: 1.6,
+                            color: '#666'
+                          }}
+                        >
+                          {task}
+                        </Typography>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {exp.highlighted && (
+                    <Box
+                      sx={{
+                        marginTop: '16px',
+                        padding: '12px 16px',
+                        background: 'rgba(102, 126, 234, 0.1)',
+                        borderRadius: '8px',
+                        borderLeft: '4px solid #667eea'
+                      }}
+                    >
+                      <Typography
+                        variant="body2"
+                        sx={{
+                          color: '#667eea',
+                          fontWeight: 500,
+                          fontSize: '0.9rem'
+                        }}
+                      >
+                        Current Position
+                      </Typography>
+                    </Box>
+                  )}
+                </Box>
+              ))}
+            </Box>
+          </Grid>
+        </Grid>
+      </Container>
+    </section>
   );
 }

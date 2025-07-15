@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Certificate from "./sections/Certificate";
 import Contact from "./sections/Contact";
+import Education from "./sections/Education";
 import Experience from "./sections/Experience";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
@@ -11,19 +12,18 @@ import "./styles/global.css";
 
 function App() {
   return (
-    <>
-      <div>
-        <Navbar />
-        <Hero />
-        <About />
-        <Experience />
-        <Skills />
-        <Projects />
-        <Certificate />
-        <Contact />
-        <Footer />
-      </div>
-    </>
+    <div className="main-container">
+      <Navbar />
+      <Hero />
+      <About />
+      <Experience />
+      <Skills />
+      <Education />
+      <Certificate />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 

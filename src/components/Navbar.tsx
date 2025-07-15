@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Link as ScrollLink } from "react-scroll";
 import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu"; // Pastikan Anda sudah menginstal @mui/icons-material
+import MenuIcon from "@mui/icons-material/Menu";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -22,78 +22,142 @@ export default function Navbar() {
     setDrawerOpen(open);
   };
 
-  // Menu items untuk navigasi
+  // Updated menu items to match design
   const menuItems = [
-    { text: "About", anchor: "about" },
-    { text: "Experience", anchor: "experience" },
-    { text: "Skills", anchor: "skills" },
+    { text: "Home", anchor: "hero" },
     { text: "Projects", anchor: "projects" },
-    { text: "Certificates", anchor: "certificates" },
-    { text: "Contact", anchor: "contact" },
+    { text: "About", anchor: "about" },
   ];
 
   return (
     <>
-      <AppBar position="fixed">
-        <Toolbar>
-          <Typography variant="h6" style={{ flexGrow: 1 }}>
-            <ScrollLink
-              to="hero"
-              smooth={true}
-              duration={500}
-              style={{ color: "inherit", textDecoration: "none" }}
+      <AppBar 
+        position="fixed" 
+        sx={{ 
+          background: 'rgba(255, 255, 255, 0.1)',
+          backdropFilter: 'blur(10px)',
+          boxShadow: 'none',
+          borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
+        }}
+      >
+        <Container maxWidth="lg">
+          <Toolbar sx={{ padding: '0 !important' }}>
+            <Typography 
+              variant="h6" 
+              sx={{ 
+                flexGrow: 1, 
+                fontWeight: 700,
+                fontSize: '1.5rem',
+                color: 'white'
+              }}
             >
-              My Portfolio
-            </ScrollLink>
-          </Typography>
-          {(isMobile || isTablet) && (
-            <IconButton
-              edge="end"
-              color="inherit"
-              aria-label="menu"
-              onClick={toggleDrawer(true)}
-            >
-              <MenuIcon />
-            </IconButton>
-          )}
-          {/* Menambahkan button untuk versi desktop */}
-          {!(isMobile || isTablet) &&
-            menuItems.map((item) => (
               <ScrollLink
-                key={item.text}
-                to={item.anchor}
+                to="hero"
                 smooth={true}
                 duration={500}
+                style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }}
               >
-                <Button color="inherit">{item.text}</Button>
+                YoshuaDCZ.
               </ScrollLink>
-            ))}
-        </Toolbar>
+            </Typography>
+
+            {(isMobile || isTablet) && (
+              <IconButton
+                edge="end"
+                color="inherit"
+                aria-label="menu"
+                onClick={toggleDrawer(true)}
+                sx={{ color: 'white' }}
+              >
+                <MenuIcon />
+              </IconButton>
+            )}
+
+            {/* Desktop navigation */}
+            {!(isMobile || isTablet) && (
+              <div style={{ display: 'flex', gap: '8px' }}>
+                {menuItems.map((item) => (
+                  <ScrollLink
+                    key={item.text}
+                    to={item.anchor}
+                    smooth={true}
+                    duration={500}
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <Button 
+                      sx={{
+                        color: 'white',
+                        fontWeight: 500,
+                        fontSize: '1rem',
+                        padding: '8px 16px',
+                        borderRadius: '8px',
+                        textTransform: 'none',
+                        '&:hover': {
+                          background: 'rgba(255, 255, 255, 0.1)',
+                        },
+                        '&.active': {
+                          background: 'rgba(255, 255, 255, 0.2)',
+                        }
+                      }}
+                    >
+                      {item.text}
+                    </Button>
+                  </ScrollLink>
+                ))}
+              </div>
+            )}
+          </Toolbar>
+        </Container>
       </AppBar>
 
-      {/* Drawer untuk perangkat kecil di sebelah kanan */}
-      <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
-        <Container sx={{ width: 250 }} role="presentation">
+      {/* Mobile drawer */}
+      <Drawer 
+        anchor="right" 
+        open={drawerOpen} 
+        onClose={toggleDrawer(false)}
+        sx={{
+          '& .MuiDrawer-paper': {
+            background: 'rgba(255, 255, 255, 0.95)',
+            backdropFilter: 'blur(10px)',
+            width: 250,
+          }
+        }}
+      >
+        <div style={{ padding: '20px 0' }}>
           <List>
             {menuItems.map((item) => (
               <ListItem
                 key={item.text}
                 onClick={toggleDrawer(false)}
-                sx={{ cursor: "pointer" }}
-                component={"div"}
+                sx={{ 
+                  cursor: "pointer",
+                  '&:hover': {
+                    background: 'rgba(102, 126, 234, 0.1)',
+                  }
+                }}
               >
                 <ScrollLink
                   to={item.anchor}
                   smooth={true}
                   duration={500}
-                  style={{ width: "100%" }}
+                  style={{ 
+                    width: "100%", 
+                    textDecoration: 'none',
+                    color: '#333'
+                  }}
                 >
-                  <ListItemText primary={item.text} />
+                  <ListItemText 
+                    primary={item.text}
+                    primaryTypographyProps={{
+                      fontWeight: 500,
+                      fontSize: '1rem'
+                    }}
+                  />
                 </ScrollLink>
               </ListItem>
             ))}
           </List>
-        </Container>
+        </div>
       </Drawer>
     </>
   );
