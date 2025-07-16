@@ -34,10 +34,11 @@ export default function Navbar() {
       <AppBar 
         position="fixed" 
         sx={{ 
-          background: 'rgba(255, 255, 255, 0.1)',
-          backdropFilter: 'blur(10px)',
-          boxShadow: 'none',
-          borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
+          background: 'rgba(102, 126, 234, 0.95)',
+          backdropFilter: 'blur(15px)',
+          boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+          borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
+          transition: 'all 0.3s ease'
         }}
       >
         <Container maxWidth="lg">
@@ -93,11 +94,13 @@ export default function Navbar() {
                         borderRadius: '8px',
                         textTransform: 'none',
                         '&:hover': {
-                          background: 'rgba(255, 255, 255, 0.1)',
+                          background: 'rgba(255, 255, 255, 0.2)',
+                          transform: 'translateY(-1px)',
                         },
                         '&.active': {
-                          background: 'rgba(255, 255, 255, 0.2)',
-                        }
+                          background: 'rgba(255, 255, 255, 0.3)',
+                        },
+                        transition: 'all 0.3s ease'
                       }}
                     >
                       {item.text}
@@ -117,9 +120,10 @@ export default function Navbar() {
         onClose={toggleDrawer(false)}
         sx={{
           '& .MuiDrawer-paper': {
-            background: 'rgba(255, 255, 255, 0.95)',
+            background: 'rgba(255, 255, 255, 0.98)',
             backdropFilter: 'blur(10px)',
             width: 250,
+            boxShadow: '0 0 20px rgba(0, 0, 0, 0.1)',
           }
         }}
       >

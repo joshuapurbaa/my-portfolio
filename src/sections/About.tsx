@@ -2,13 +2,13 @@ import { Container, Typography, Box, Grid, Chip } from "@mui/material";
 
 export default function About() {
   const stackSkills = [
-    { name: "Web Design", color: "#667eea" },
-    { name: "UI/UX Expertise", color: "#f093fb" },
-    { name: "HTML/CSS", color: "#4ecdc4" },
+    { name: "Mobile App Development", color: "#667eea" },
+    { name: "Cross-Platform Development", color: "#4ecdc4" },
     { name: "Effective Team Player", color: "#45b7d1" },
-    { name: "JavaScript Proficiency", color: "#96ceb4" },
+    { name: "Clean Architecture", color: "#45b7d1" },
     { name: "Problem Solving", color: "#ffeaa7" },
-    { name: "Keeping Abreast of Trends", color: "#fd79a8" }
+    { name: "Keeping Abreast of Trends", color: "#fd79a8" },
+    { name: "Flutter Development", color: "#42a5f5" }
   ];
 
   return (
@@ -43,7 +43,7 @@ export default function About() {
                 fontWeight: 400
               }}
             >
-              Developing beautiful and functional websites is what I love doing, and that's why I give my all in every new challenge.
+              Creating innovative and user-friendly mobile applications is what I love doing, and that's why I give my all in every new challenge.
             </Typography>
           </Box>
         </Box>
