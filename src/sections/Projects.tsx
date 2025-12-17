@@ -47,11 +47,11 @@ export default function Projects() {
             fontSize: { xs: '2.5rem', sm: '3rem', md: '4rem' },
             fontWeight: 700,
             marginBottom: '48px',
-            color: '#333',
+            color: '#f1f5f9',
             textAlign: 'center'
           }}
         >
-          Projects<span style={{ color: '#667eea' }}>.</span>
+          Projects<span style={{ color: '#818cf8' }}>.</span>
         </Typography>
 
         <Grid container spacing={4} justifyContent="center">
@@ -67,19 +67,19 @@ export default function Projects() {
                 >
                   <Card
                     sx={{
-                      background: 'rgba(255, 255, 255, 0.9)',
+                      background: 'rgba(30, 41, 59, 0.6)',
                       borderRadius: '16px',
                       overflow: 'hidden',
-                      boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)',
+                      boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
                       transition: 'all 0.3s ease',
                       cursor: "pointer",
-                      border: '1px solid rgba(102, 126, 234, 0.1)',
+                      border: '1px solid rgba(129, 140, 248, 0.1)',
                       height: '100%',
                       display: 'flex',
                       flexDirection: 'column',
                       '&:hover': {
                         transform: 'translateY(-8px)',
-                        boxShadow: '0 20px 40px rgba(0, 0, 0, 0.15)',
+                        boxShadow: '0 20px 40px rgba(0, 0, 0, 0.4)',
                       },
                     }}
                     onClick={() => handleOpen(project)}
@@ -91,7 +91,7 @@ export default function Projects() {
                       alt={project.name}
                       sx={{ 
                         objectFit: "cover",
-                        borderBottom: '1px solid rgba(0, 0, 0, 0.1)'
+                        borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
                       }}
                     />
                     <CardContent sx={{ flexGrow: 1, padding: '24px' }}>
@@ -100,7 +100,7 @@ export default function Projects() {
                         component="div"
                         sx={{
                           fontWeight: 600,
-                          color: '#333',
+                          color: '#f1f5f9',
                           marginBottom: '12px',
                           fontSize: '1.2rem'
                         }}
@@ -110,7 +110,7 @@ export default function Projects() {
                       <Typography 
                         variant="body2" 
                         sx={{
-                          color: '#666',
+                          color: '#cbd5e1',
                           lineHeight: 1.6,
                           marginBottom: '16px',
                           fontSize: '0.9rem'
@@ -126,13 +126,13 @@ export default function Projects() {
                             label={tag}
                             size="small"
                             sx={{
-                              backgroundColor: 'rgba(102, 126, 234, 0.1)',
-                              color: '#667eea',
+                              backgroundColor: 'rgba(129, 140, 248, 0.1)',
+                              color: '#818cf8',
                               fontWeight: 500,
                               fontSize: '0.75rem',
-                              border: '1px solid rgba(102, 126, 234, 0.2)',
+                              border: '1px solid rgba(129, 140, 248, 0.2)',
                               '&:hover': {
-                                backgroundColor: 'rgba(102, 126, 234, 0.2)',
+                                backgroundColor: 'rgba(129, 140, 248, 0.2)',
                               }
                             }}
                           />

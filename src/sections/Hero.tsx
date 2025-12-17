@@ -54,7 +54,7 @@ export default function Hero() {
                     className="modern-button primary"
                     sx={{
                       background: 'rgba(255, 255, 255, 0.9)',
-                      color: '#667eea',
+                      color: '#1e1b4b',
                       border: 'none',
                       borderRadius: '30px',
                       padding: '12px 28px',

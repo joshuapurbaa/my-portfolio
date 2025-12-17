@@ -48,10 +48,10 @@ export default function Skills() {
             fontSize: { xs: '2.5rem', sm: '3rem', md: '4rem' },
             fontWeight: 700,
             marginBottom: '48px',
-            color: '#333'
+            color: '#f1f5f9'
           }}
         >
-          Skills<span style={{ color: '#667eea' }}>.</span>
+          Skills<span style={{ color: '#818cf8' }}>.</span>
         </Typography>
 
         <Grid container spacing={4}>
@@ -64,7 +64,7 @@ export default function Skills() {
                     fontSize: '1.3rem',
                     fontWeight: 600,
                     marginBottom: '20px',
-                    color: '#333'
+                    color: '#f1f5f9'
                   }}
                 >
                   {category}
@@ -75,7 +75,7 @@ export default function Skills() {
                       <Typography 
                         variant="body1" 
                         sx={{
-                          color: '#666',
+                          color: '#cbd5e1',
                           padding: '6px 0',
                           fontSize: '0.95rem',
                           lineHeight: 1.5,
@@ -83,7 +83,7 @@ export default function Skills() {
                           paddingLeft: '0px',
                           transition: 'color 0.3s ease',
                           '&:hover': {
-                            color: '#667eea',
+                            color: '#818cf8',
                             cursor: 'default'
                           }
                         }}
@@ -106,7 +106,7 @@ export default function Skills() {
               fontSize: '1.8rem',
               fontWeight: 600,
               marginBottom: '24px',
-              color: '#333',
+              color: '#f1f5f9',
               textAlign: 'center'
             }}
           >
@@ -123,27 +123,27 @@ export default function Skills() {
               <Grid item xs={12} sm={6} md={3} key={index}>
                 <Box
                   sx={{
-                    background: 'rgba(255, 255, 255, 0.8)',
+                    background: 'rgba(30, 41, 59, 0.6)',
                     borderRadius: '12px',
                     padding: '20px',
                     textAlign: 'center',
-                    border: '1px solid rgba(102, 126, 234, 0.1)',
+                    border: '1px solid rgba(129, 140, 248, 0.1)',
                     transition: 'all 0.3s ease',
                     minHeight: '80px',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     '&:hover': {
-                      background: 'rgba(102, 126, 234, 0.1)',
+                      background: 'rgba(129, 140, 248, 0.1)',
                       transform: 'translateY(-4px)',
-                      boxShadow: '0 8px 25px rgba(102, 126, 234, 0.15)',
+                      boxShadow: '0 8px 25px rgba(129, 140, 248, 0.15)',
                     }
                   }}
                 >
                   <Typography 
                     variant="body1" 
                     sx={{
-                      color: '#333',
+                      color: '#f1f5f9',
                       fontWeight: 500,
                       fontSize: '0.9rem'
                     }}

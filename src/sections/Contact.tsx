@@ -40,11 +40,11 @@ export default function Contact() {
             fontSize: { xs: '2.5rem', sm: '3rem', md: '4rem' },
             fontWeight: 700,
             marginBottom: '48px',
-            color: '#333',
+            color: '#f1f5f9',
             textAlign: 'center'
           }}
         >
-          Contact<span style={{ color: '#667eea' }}>.</span>
+          Contact<span style={{ color: '#818cf8' }}>.</span>
         </Typography>
 
         <Grid container spacing={4}>
@@ -57,7 +57,7 @@ export default function Contact() {
                   fontSize: '1.8rem',
                   fontWeight: 600,
                   marginBottom: '24px',
-                  color: '#333'
+                  color: '#f1f5f9'
                 }}
               >
                 Get in Touch
@@ -65,7 +65,7 @@ export default function Contact() {
               <Typography
                 variant="body1"
                 sx={{
-                  color: '#666',
+                  color: '#cbd5e1',
                   lineHeight: 1.6,
                   marginBottom: '32px',
                   fontSize: '1rem'
@@ -80,14 +80,14 @@ export default function Contact() {
                 <Card
                   key={index}
                   sx={{
-                    background: 'rgba(255, 255, 255, 0.8)',
+                    background: 'rgba(30, 41, 59, 0.6)',
                     borderRadius: '12px',
-                    border: '1px solid rgba(102, 126, 234, 0.1)',
+                    border: '1px solid rgba(129, 140, 248, 0.1)',
                     transition: 'all 0.3s ease',
                     '&:hover': {
-                      background: 'rgba(102, 126, 234, 0.05)',
+                      background: 'rgba(129, 140, 248, 0.05)',
                       transform: 'translateY(-2px)',
-                      boxShadow: '0 8px 25px rgba(102, 126, 234, 0.15)',
+                      boxShadow: '0 8px 25px rgba(129, 140, 248, 0.15)',
                     },
                     cursor: 'pointer'
                   }}
@@ -100,11 +100,11 @@ export default function Contact() {
                           width: '48px',
                           height: '48px',
                           borderRadius: '12px',
-                          background: 'rgba(102, 126, 234, 0.1)',
+                          background: 'rgba(129, 140, 248, 0.1)',
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
-                          color: '#667eea'
+                          color: '#818cf8'
                         }}
                       >
                         {contact.icon}
@@ -114,7 +114,7 @@ export default function Contact() {
                           variant="h6"
                           sx={{
                             fontWeight: 600,
-                            color: '#333',
+                            color: '#f1f5f9',
                             fontSize: '1rem',
                             marginBottom: '4px'
                           }}
@@ -124,7 +124,7 @@ export default function Contact() {
                         <Typography
                           variant="body1"
                           sx={{
-                            color: '#666',
+                            color: '#cbd5e1',
                             fontSize: '0.9rem'
                           }}
                         >
@@ -147,7 +147,7 @@ export default function Contact() {
                   fontSize: '1.8rem',
                   fontWeight: 600,
                   marginBottom: '24px',
-                  color: '#333'
+                  color: '#f1f5f9'
                 }}
               >
                 Let's Connect
@@ -155,7 +155,7 @@ export default function Contact() {
               <Typography
                 variant="body1"
                 sx={{
-                  color: '#666',
+                  color: '#cbd5e1',
                   lineHeight: 1.6,
                   marginBottom: '32px',
                   fontSize: '1rem'

@@ -46,10 +46,10 @@ export default function Experience() {
             fontSize: { xs: '2.5rem', sm: '3rem', md: '4rem' },
             fontWeight: 700,
             marginBottom: '48px',
-            color: '#333'
+            color: '#f1f5f9'
           }}
         >
-          Experience<span style={{ color: '#667eea' }}>.</span>
+          Experience<span style={{ color: '#818cf8' }}>.</span>
         </Typography>
 
         <Grid container spacing={4}>
@@ -67,10 +67,10 @@ export default function Experience() {
                     padding: '16px',
                     borderRadius: '12px',
                     transition: 'all 0.3s ease',
-                    background: exp.highlighted ? '#667eea' : 'rgba(255, 255, 255, 0.8)',
-                    color: exp.highlighted ? 'white' : '#333',
+                    background: exp.highlighted ? '#818cf8' : 'rgba(30, 41, 59, 0.6)',
+                    color: exp.highlighted ? 'white' : '#f1f5f9',
                     '&:hover': {
-                      background: exp.highlighted ? '#5a67d8' : 'rgba(102, 126, 234, 0.1)',
+                      background: exp.highlighted ? '#6366f1' : 'rgba(129, 140, 248, 0.1)',
                       transform: 'translateX(8px)',
                     }
                   }}
@@ -80,7 +80,7 @@ export default function Experience() {
                       width: '12px',
                       height: '12px',
                       borderRadius: '50%',
-                      background: exp.highlighted ? 'white' : '#667eea',
+                      background: exp.highlighted ? 'white' : '#818cf8',
                       marginRight: '16px',
                       flexShrink: 0
                     }}
@@ -131,7 +131,7 @@ export default function Experience() {
                     sx={{
                       fontSize: '1.3rem',
                       fontWeight: 600,
-                      color: '#667eea',
+                      color: '#818cf8',
                       marginBottom: '8px'
                     }}
                   >
@@ -142,7 +142,7 @@ export default function Experience() {
                     variant="body2"
                     className="experience-period"
                     sx={{
-                      color: '#888',
+                      color: '#94a3b8',
                       fontSize: '0.9rem',
                       marginBottom: '16px'
                     }}
@@ -158,7 +158,7 @@ export default function Experience() {
                           sx={{
                             fontSize: '0.95rem',
                             lineHeight: 1.6,
-                            color: '#666'
+                            color: '#cbd5e1'
                           }}
                         >
                           {task}
@@ -172,15 +172,15 @@ export default function Experience() {
                       sx={{
                         marginTop: '16px',
                         padding: '12px 16px',
-                        background: 'rgba(102, 126, 234, 0.1)',
+                        background: 'rgba(129, 140, 248, 0.1)',
                         borderRadius: '8px',
-                        borderLeft: '4px solid #667eea'
+                        borderLeft: '4px solid #818cf8'
                       }}
                     >
                       <Typography
                         variant="body2"
                         sx={{
-                          color: '#667eea',
+                          color: '#818cf8',
                           fontWeight: 500,
                           fontSize: '0.9rem'
                         }}

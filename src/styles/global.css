@@ -6,36 +6,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #e2e8f0;
 }
 
 body {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
   min-height: 100vh;
   overflow-x: hidden;
 }
 
 /* Main container styling */
 .main-container {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
   min-height: 100vh;
   position: relative;
 }
 
 /* Section container styling */
 .section-container {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(30, 41, 59, 0.7);
   border-radius: 20px;
   margin: 60px auto;
   padding: 60px 40px;
   max-width: 1200px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Hero section specific styling */
 .hero-section {
   background: transparent;
-  color: white;
+  color: #f8fafc;
   padding: 120px 40px 80px;
   text-align: left;
 }
@@ -52,9 +54,9 @@ body {
 
 /* Button styling */
 .modern-button {
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  color: #f8fafc;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 30px;
   padding: 12px 28px;
   font-weight: 600;
@@ -63,24 +65,26 @@ body {
 }
 
 .modern-button:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .modern-button.primary {
-  background: rgba(255, 255, 255, 0.9);
-  color: #667eea;
+  background: linear-gradient(135deg, #818cf8 0%, #a78bfa 100%);
+  color: white;
+  border: none;
 }
 
 .modern-button.primary:hover {
-  background: white;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
   transform: translateY(-2px);
 }
 
 /* Typography */
 .gradient-text {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #818cf8 0%, #a78bfa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -88,15 +92,16 @@ body {
 
 /* Skills category styling */
 .skills-category {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(30, 41, 59, 0.5);
   border-radius: 15px;
   padding: 24px;
   margin-bottom: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .skills-category h3 {
-  color: #333;
+  color: #f1f5f9;
   margin-bottom: 16px;
   font-weight: 600;
   font-size: 1.2rem;
@@ -108,36 +113,38 @@ body {
 }
 
 .skills-category li {
-  color: #666;
+  color: #cad4e0;
   padding: 4px 0;
   font-size: 0.95rem;
 }
 
 /* Experience timeline styling */
 .experience-item {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(30, 41, 59, 0.5);
   border-radius: 15px;
   padding: 24px;
   margin-bottom: 20px;
-  border-left: 4px solid #667eea;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #818cf8;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-left-width: 4px; /* Ensure overwrite */
 }
 
 .experience-company {
-  color: #667eea;
+  color: #a78bfa;
   font-weight: 600;
   font-size: 1.1rem;
   margin-bottom: 8px;
 }
 
 .experience-period {
-  color: #888;
+  color: #94a3b8;
   font-size: 0.9rem;
   margin-bottom: 8px;
 }
 
 .experience-role {
-  color: #333;
+  color: #f1f5f9;
   font-weight: 500;
   margin-bottom: 12px;
 }
@@ -148,7 +155,7 @@ body {
 }
 
 .experience-tasks li {
-  color: #666;
+  color: #cad4e0;
   padding: 4px 0;
   position: relative;
   padding-left: 20px;
@@ -156,7 +163,7 @@ body {
 
 .experience-tasks li:before {
   content: "✓";
-  color: #667eea;
+  color: #818cf8;
   position: absolute;
   left: 0;
 }
@@ -170,14 +177,15 @@ body {
 }
 
 .about-card {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(30, 41, 59, 0.5);
   border-radius: 15px;
   padding: 24px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .about-card h3 {
-  color: #333;
+  color: #f1f5f9;
   margin-bottom: 16px;
   font-weight: 600;
 }

@@ -78,7 +78,7 @@ export default function Certificate() {
     width: 50,
     height: 50,
     cursor: "pointer",
-    backgroundColor: "rgba(102, 126, 234, 0.9)",
+    backgroundColor: "rgba(129, 140, 248, 0.9)",
     color: "#fff",
     border: "none",
     borderRadius: "50%",
@@ -101,10 +101,10 @@ export default function Certificate() {
             fontSize: { xs: '2.5rem', sm: '3rem', md: '4rem' },
             fontWeight: 700,
             marginBottom: '48px',
-            color: '#333'
+            color: '#f1f5f9'
           }}
         >
-          Certificate<span style={{ color: '#667eea' }}>.</span>
+          Certificate<span style={{ color: '#818cf8' }}>.</span>
         </Typography>
 
         <Box sx={{ position: 'relative' }}>
@@ -152,7 +152,7 @@ export default function Certificate() {
                 width: 12,
                 height: 12,
                 borderRadius: "50%",
-                backgroundColor: isSelected ? "#667eea" : "#ccc",
+                backgroundColor: isSelected ? "#818cf8" : "#475569",
                 transition: "all 0.3s ease",
               };
               return (
@@ -172,16 +172,16 @@ export default function Certificate() {
               <div key={index} style={{ padding: "0 16px" }}>
                 <Card
                   sx={{
-                    background: 'rgba(255, 255, 255, 0.9)',
+                    background: 'rgba(30, 41, 59, 0.6)',
                     borderRadius: '16px',
                     overflow: 'hidden',
-                    boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)',
+                    boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
                     transition: 'all 0.3s ease',
                     '&:hover': {
                       transform: 'translateY(-8px)',
-                      boxShadow: '0 20px 40px rgba(0, 0, 0, 0.15)',
+                      boxShadow: '0 20px 40px rgba(0, 0, 0, 0.4)',
                     },
-                    border: '1px solid rgba(102, 126, 234, 0.1)',
+                    border: '1px solid rgba(129, 140, 248, 0.1)',
                     position: 'relative'
                   }}
                 >
@@ -192,7 +192,7 @@ export default function Certificate() {
                     alt={certificate.name}
                     sx={{
                       objectFit: 'cover',
-                      borderBottom: '1px solid rgba(0, 0, 0, 0.1)'
+                      borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
                     }}
                   />
                   <CardContent sx={{ padding: '24px' }}>
@@ -200,7 +200,7 @@ export default function Certificate() {
                       variant="h6"
                       sx={{
                         fontWeight: 600,
-                        color: '#333',
+                        color: '#f1f5f9',
                         marginBottom: '8px',
                         fontSize: '1.1rem'
                       }}
@@ -211,7 +211,7 @@ export default function Certificate() {
                     <Typography
                       variant="body2"
                       sx={{
-                        color: '#888',
+                        color: '#94a3b8',
                         marginBottom: '12px',
                         fontSize: '0.9rem'
                       }}
@@ -222,7 +222,7 @@ export default function Certificate() {
                     <Typography
                       variant="body1"
                       sx={{
-                        color: '#666',
+                        color: '#cbd5e1',
                         lineHeight: 1.6,
                         marginBottom: '16px',
                         fontSize: '0.95rem'
@@ -239,7 +239,7 @@ export default function Certificate() {
                               <Typography
                                 variant="body2"
                                 sx={{
-                                  color: '#666',
+                                  color: '#cbd5e1',
                                   fontSize: '0.85rem',
                                   marginBottom: '4px'
                                 }}
@@ -259,10 +259,10 @@ export default function Certificate() {
                           target="_blank"
                           rel="noopener noreferrer"
                           sx={{
-                            color: '#667eea',
-                            background: 'rgba(102, 126, 234, 0.1)',
+                            color: '#818cf8',
+                            background: 'rgba(129, 140, 248, 0.1)',
                             '&:hover': {
-                              background: 'rgba(102, 126, 234, 0.2)',
+                              background: 'rgba(129, 140, 248, 0.2)',
                               transform: 'scale(1.1)',
                             },
                             transition: 'all 0.3s ease'

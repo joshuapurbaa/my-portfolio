@@ -2,7 +2,7 @@ import { Container, Typography, Box, Grid, Chip } from "@mui/material";
 
 export default function About() {
   const stackSkills = [
-    { name: "Mobile App Development", color: "#667eea" },
+    { name: "Mobile App Development", color: "#818cf8" },
     { name: "Cross-Platform Development", color: "#4ecdc4" },
     { name: "Effective Team Player", color: "#45b7d1" },
     { name: "Clean Architecture", color: "#45b7d1" },
@@ -20,16 +20,16 @@ export default function About() {
             fontSize: { xs: '2.5rem', sm: '3rem', md: '4rem' },
             fontWeight: 700,
             marginBottom: '16px',
-            color: '#333'
+            color: '#f1f5f9'
           }}
         >
-          About me<span style={{ color: '#667eea' }}>.</span>
+          About me<span style={{ color: '#818cf8' }}>.</span>
         </Typography>
 
         <Box sx={{ marginBottom: '48px' }}>
           <Box
             sx={{
-              borderLeft: '4px solid #667eea',
+              borderLeft: '4px solid #818cf8',
               paddingLeft: '24px',
               marginBottom: '32px'
             }}
@@ -39,7 +39,7 @@ export default function About() {
               sx={{
                 fontSize: '1.1rem',
                 lineHeight: 1.6,
-                color: '#666',
+                color: '#cbd5e1',
                 fontWeight: 400
               }}
             >
@@ -57,7 +57,7 @@ export default function About() {
                   fontSize: '1.5rem',
                   fontWeight: 600,
                   marginBottom: '24px',
-                  color: '#333'
+                  color: '#f1f5f9'
                 }}
               >
                 My Stack.
@@ -98,7 +98,7 @@ export default function About() {
                   fontSize: '1.5rem',
                   fontWeight: 600,
                   marginBottom: '24px',
-                  color: '#333'
+                  color: '#f1f5f9'
                 }}
               >
                 My Special Place.
@@ -110,7 +110,7 @@ export default function About() {
                   height: '300px',
                   borderRadius: '12px',
                   overflow: 'hidden',
-                  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                  background: 'linear-gradient(135deg, #1e1b4b 0%, #312e81 100%)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',

@@ -18,22 +18,22 @@ export default function Education() {
             fontSize: { xs: '2.5rem', sm: '3rem', md: '4rem' },
             fontWeight: 700,
             marginBottom: '48px',
-            color: '#333'
+            color: '#f1f5f9'
           }}
         >
-          Education<span style={{ color: '#667eea' }}>.</span>
+          Education<span style={{ color: '#818cf8' }}>.</span>
         </Typography>
 
         <Grid container spacing={4} justifyContent="center">
           <Grid item xs={12} md={8}>
             <Box
               sx={{
-                background: 'rgba(255, 255, 255, 0.9)',
+                background: 'rgba(30, 41, 59, 0.6)',
                 borderRadius: '20px',
                 padding: '40px',
                 textAlign: 'center',
-                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)',
-                border: '1px solid rgba(102, 126, 234, 0.1)',
+                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
+                border: '1px solid rgba(129, 140, 248, 0.1)',
                 position: 'relative',
                 overflow: 'hidden',
                 '&::before': {
@@ -43,7 +43,7 @@ export default function Education() {
                   left: 0,
                   right: 0,
                   height: '4px',
-                  background: 'linear-gradient(90deg, #667eea 0%, #764ba2 100%)',
+                  background: 'linear-gradient(90deg, #818cf8 0%, #a78bfa 100%)',
                 }
               }}
             >
@@ -52,7 +52,7 @@ export default function Education() {
                   variant="h4"
                   sx={{
                     fontWeight: 600,
-                    color: '#667eea',
+                    color: '#818cf8',
                     marginBottom: '16px',
                     fontSize: '1.8rem'
                   }}
@@ -64,7 +64,7 @@ export default function Education() {
                   variant="h5"
                   sx={{
                     fontWeight: 500,
-                    color: '#333',
+                    color: '#f1f5f9',
                     marginBottom: '12px',
                     fontSize: '1.3rem'
                   }}
@@ -75,7 +75,7 @@ export default function Education() {
                 <Typography
                   variant="body1"
                   sx={{
-                    color: '#888',
+                    color: '#94a3b8',
                     marginBottom: '16px',
                     fontSize: '1rem'
                   }}
@@ -86,17 +86,17 @@ export default function Education() {
                 <Box
                   sx={{
                     display: 'inline-block',
-                    background: 'rgba(102, 126, 234, 0.1)',
+                    background: 'rgba(129, 140, 248, 0.1)',
                     padding: '8px 20px',
                     borderRadius: '25px',
                     marginBottom: '24px',
-                    border: '1px solid rgba(102, 126, 234, 0.2)'
+                    border: '1px solid rgba(129, 140, 248, 0.2)'
                   }}
                 >
                   <Typography
                     variant="h6"
                     sx={{
-                      color: '#667eea',
+                      color: '#818cf8',
                       fontWeight: 600,
                       fontSize: '1.1rem'
                     }}
@@ -108,7 +108,7 @@ export default function Education() {
                 <Typography
                   variant="body1"
                   sx={{
-                    color: '#666',
+                    color: '#cbd5e1',
                     lineHeight: 1.6,
                     fontSize: '1rem',
                     fontStyle: 'italic'
