@@ -48,3 +48,7 @@ export default tseslint.config({
   },
 })
 ```
+
+<!-- Deployment -->
+
+npx vercel deploy
