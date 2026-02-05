@@ -1,15 +1,19 @@
-import { Container, Typography, Box, Grid } from "@mui/material";
+import { Container, Typography, Box, Grid, Chip } from "@mui/material";
+import WorkIcon from '@mui/icons-material/Work';
 
 // Updated experiences with Yoshua Purba's actual work history
+// Added 'technologies' field for better HR scanning
 const experiences = [
   {
     company: "Bank Raya",
     period: "Aug 2024 - Present",
     role: "Frontend Developer",
     tasks: [
-      "Expanding Features in Current Mobile Applications (Flutter) and Webview (NextJS)",
-      "Mobile Apps: Bank Raya"
+      "Expanding features in current mobile applications using Flutter for cross-platform performance",
+      "Developing and maintaining webviews using Next.js for seamless integration",
+      "Collaborating with cross-functional teams to deliver high-quality banking features",
     ],
+    technologies: ["Flutter", "Dart", "Next.js", "TypeScript", "CI/CD"],
     highlighted: true
   },
   {
@@ -17,21 +21,23 @@ const experiences = [
     period: "Feb 2023 - Aug 2024",
     role: "Flutter Developer",
     tasks: [
-      "Implementing New Features for Existing Mobile Apps",
-      "Fixing Bugs and Enhancement",
-      "Apps: PLN Click, Barista PLN, COLOK.IN"
+      "Implemented new critical features for PLN Click, Barista PLN, and COLOK.IN apps",
+      "Responsible for bug fixing, performance optimization, and UI/UX enhancements",
+      "Maintained code quality and adhered to best practices in mobile development"
     ],
+    technologies: ["Flutter", "Dart", "State Management", "REST API"],
     highlighted: false
   },
   {
     company: "Alterra Academy",
-    period: "Des 2021 - Feb 2022 and Aug 2022 - Jun 2023",
-    role: "Mentor Freelance",
+    period: "Dec 2021 - Jun 2023",
+    role: "Flutter Mentor (Freelance)",
     tasks: [
-      "Make learning materials about mobile application development using Flutter and Dart.",
-      "Record a video presentation of the material.",
-      "Conduct live sessions for the mentee."
+      "Created comprehensive learning materials for mobile application development",
+      "Produced high-quality video presentations and tutorials",
+      "Conducted live mentoring sessions, guiding students through practical implementation"
     ],
+    technologies: ["Mentoring", "Flutter", "Curriculum Design", "Public Speaking"],
     highlighted: false
   }
 ];
@@ -43,157 +49,115 @@ export default function Experience() {
         <Typography 
           variant="h2" 
           sx={{
-            fontSize: { xs: '2.5rem', sm: '3rem', md: '4rem' },
+            fontSize: { xs: '2rem', sm: '2.5rem', md: '3.5rem' },
             fontWeight: 700,
-            marginBottom: '48px',
-            color: '#f1f5f9'
+            marginBottom: '60px',
+            background: 'linear-gradient(to right, #fff, #cbd5e1)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            display: 'flex',
+            alignItems: 'center',
+            gap: 2
           }}
         >
-          Experience<span style={{ color: '#818cf8' }}>.</span>
+          <WorkIcon sx={{ fontSize: 'inherit', color: '#a78bfa', opacity: 0.8 }} />
+          Work Experience<span style={{ color: '#8b5cf6' }}>.</span>
         </Typography>
 
-        <Grid container spacing={4}>
-          {/* Timeline sidebar */}
-          <Grid item xs={12} md={4}>
-            <Box sx={{ position: 'sticky', top: '100px' }}>
-              {experiences.map((exp, index) => (
-                <Box
-                  key={index}
-                  sx={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginBottom: '24px',
-                    cursor: 'pointer',
-                    padding: '16px',
-                    borderRadius: '12px',
-                    transition: 'all 0.3s ease',
-                    background: exp.highlighted ? '#818cf8' : 'rgba(30, 41, 59, 0.6)',
-                    color: exp.highlighted ? 'white' : '#f1f5f9',
-                    '&:hover': {
-                      background: exp.highlighted ? '#6366f1' : 'rgba(129, 140, 248, 0.1)',
-                      transform: 'translateX(8px)',
-                    }
-                  }}
-                >
-                  <Box
-                    sx={{
-                      width: '12px',
-                      height: '12px',
-                      borderRadius: '50%',
-                      background: exp.highlighted ? 'white' : '#818cf8',
-                      marginRight: '16px',
-                      flexShrink: 0
-                    }}
-                  />
-                  <Box>
-                    <Typography
-                      variant="h6"
-                      sx={{
-                        fontWeight: 600,
-                        fontSize: '1rem',
-                        marginBottom: '4px'
-                      }}
-                    >
-                      {exp.company}
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      sx={{
-                        opacity: 0.8,
-                        fontSize: '0.9rem'
-                      }}
-                    >
-                      {exp.period}
-                    </Typography>
-                  </Box>
-                </Box>
-              ))}
-            </Box>
-          </Grid>
+        <Box sx={{ position: 'relative' }}>
+          {/* Vertical line for desktop */}
+          <Box 
+            sx={{ 
+              position: 'absolute', 
+              left: { md: '300px' }, 
+              top: '20px', 
+              bottom: '20px', 
+              width: '2px', 
+              background: 'linear-gradient(to bottom, #8b5cf6, rgba(139, 92, 246, 0.1))',
+              display: { xs: 'none', md: 'block' }
+            }} 
+          />
 
-          {/* Experience details */}
-          <Grid item xs={12} md={8}>
-            <Box sx={{ paddingLeft: { md: '32px' } }}>
-              {experiences.map((exp, index) => (
-                <Box
-                  key={index}
-                  className="experience-item"
+          {experiences.map((exp, index) => (
+            <Grid container spacing={4} key={index} sx={{ marginBottom: '40px', position: 'relative' }}>
+              
+              {/* Timeline Dot (Desktop) */}
+              <Box
+                sx={{
+                  position: 'absolute',
+                  left: { md: '294px' },
+                  top: '32px',
+                  width: '14px',
+                  height: '14px',
+                  borderRadius: '50%',
+                  background: exp.highlighted ? '#8b5cf6' : '#1e293b',
+                  border: '2px solid #8b5cf6',
+                  zIndex: 2,
+                  display: { xs: 'none', md: 'block' },
+                  boxShadow: exp.highlighted ? '0 0 15px rgba(139, 92, 246, 0.6)' : 'none'
+                }}
+              />
+
+              {/* Left Side: Period & Company */}
+              <Grid item xs={12} md={3} sx={{ textAlign: { md: 'right' }, paddingRight: { md: '40px' } }}>
+                <Typography
                   sx={{
-                    marginBottom: '32px',
-                    opacity: exp.highlighted ? 1 : 0.8,
-                    transform: exp.highlighted ? 'scale(1.02)' : 'scale(1)',
-                    transition: 'all 0.3s ease'
+                    color: exp.highlighted ? '#a78bfa' : '#94a3b8',
+                    fontWeight: 600,
+                    fontSize: '1.2rem',
+                    marginBottom: '4px'
                   }}
                 >
+                  {exp.company}
+                </Typography>
+                <Typography
+                  sx={{
+                    color: '#64748b',
+                    fontWeight: 500,
+                    fontSize: '0.9rem',
+                    fontFamily: 'Outfit, sans-serif'
+                  }}
+                >
+                  {exp.period}
+                </Typography>
+              </Grid>
+
+              {/* Right Side: Role & Details */}
+              <Grid item xs={12} md={9}>
+                <Box className="experience-item" sx={{ borderLeft: exp.highlighted ? '4px solid #8b5cf6' : '1px solid rgba(255,255,255,0.05)' }}>
                   <Typography
                     variant="h5"
-                    className="experience-company"
                     sx={{
-                      fontSize: '1.3rem',
-                      fontWeight: 600,
-                      color: '#818cf8',
-                      marginBottom: '8px'
-                    }}
-                  >
-                    {exp.role} @ {exp.company}
-                  </Typography>
-                  
-                  <Typography
-                    variant="body2"
-                    className="experience-period"
-                    sx={{
-                      color: '#94a3b8',
-                      fontSize: '0.9rem',
+                      fontSize: '1.5rem',
+                      fontWeight: 700,
+                      color: 'white',
                       marginBottom: '16px'
                     }}
                   >
-                    {exp.period}
+                    {exp.role}
                   </Typography>
 
                   <ul className="experience-tasks">
                     {exp.tasks.map((task, taskIndex) => (
-                      <li key={taskIndex}>
-                        <Typography
-                          variant="body1"
-                          sx={{
-                            fontSize: '0.95rem',
-                            lineHeight: 1.6,
-                            color: '#cbd5e1'
-                          }}
-                        >
-                          {task}
-                        </Typography>
-                      </li>
+                      <li key={taskIndex}>{task}</li>
                     ))}
                   </ul>
 
-                  {exp.highlighted && (
-                    <Box
-                      sx={{
-                        marginTop: '16px',
-                        padding: '12px 16px',
-                        background: 'rgba(129, 140, 248, 0.1)',
-                        borderRadius: '8px',
-                        borderLeft: '4px solid #818cf8'
-                      }}
-                    >
-                      <Typography
-                        variant="body2"
-                        sx={{
-                          color: '#818cf8',
-                          fontWeight: 500,
-                          fontSize: '0.9rem'
-                        }}
-                      >
-                        Current Position
-                      </Typography>
-                    </Box>
-                  )}
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, marginTop: '20px' }}>
+                    {exp.technologies.map((tech, i) => (
+                      <Chip 
+                        key={i} 
+                        label={tech} 
+                        className="tech-chip" 
+                        size="small" 
+                      />
+                    ))}
+                  </Box>
                 </Box>
-              ))}
-            </Box>
-          </Grid>
-        </Grid>
+              </Grid>
+            </Grid>
+          ))}
+        </Box>
       </Container>
     </section>
   );

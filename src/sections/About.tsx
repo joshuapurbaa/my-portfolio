@@ -1,158 +1,160 @@
-import { Container, Typography, Box, Grid, Chip } from "@mui/material";
+import { Container, Typography, Box, Grid, Paper } from "@mui/material";
+import BoltIcon from '@mui/icons-material/Bolt';
+import DevicesIcon from '@mui/icons-material/Devices';
+import GroupsIcon from '@mui/icons-material/Groups';
 
 export default function About() {
-  const stackSkills = [
-    { name: "Mobile App Development", color: "#818cf8" },
-    { name: "Cross-Platform Development", color: "#4ecdc4" },
-    { name: "Effective Team Player", color: "#45b7d1" },
-    { name: "Clean Architecture", color: "#45b7d1" },
-    { name: "Problem Solving", color: "#ffeaa7" },
-    { name: "Keeping Abreast of Trends", color: "#fd79a8" },
-    { name: "Flutter Development", color: "#42a5f5" }
+  const highlights = [
+    {
+      title: "Mobile Expert",
+      description: "Specialized in Flutter for high-performance ios & android apps",
+      icon: <DevicesIcon sx={{ fontSize: 32, color: '#8b5cf6' }} />
+    },
+    {
+      title: "Problem Solver",
+      description: "Analytical approach to complex technical challenges",
+      icon: <BoltIcon sx={{ fontSize: 32, color: '#ec4899' }} />
+    },
+    {
+      title: "Team Player",
+      description: "Experience working in agile cross-functional teams",
+      icon: <GroupsIcon sx={{ fontSize: 32, color: '#10b981' }} />
+    }
   ];
 
   return (
     <section id="about" className="section-container">
       <Container maxWidth="lg">
-        <Typography 
-          variant="h2" 
-          sx={{
-            fontSize: { xs: '2.5rem', sm: '3rem', md: '4rem' },
-            fontWeight: 700,
-            marginBottom: '16px',
-            color: '#f1f5f9'
-          }}
-        >
-          About me<span style={{ color: '#818cf8' }}>.</span>
-        </Typography>
-
-        <Box sx={{ marginBottom: '48px' }}>
-          <Box
-            sx={{
-              borderLeft: '4px solid #818cf8',
-              paddingLeft: '24px',
-              marginBottom: '32px'
-            }}
-          >
-            <Typography 
-              variant="h6" 
-              sx={{
-                fontSize: '1.1rem',
-                lineHeight: 1.6,
-                color: '#cbd5e1',
-                fontWeight: 400
-              }}
-            >
-              Creating innovative and user-friendly mobile applications is what I love doing, and that's why I give my all in every new challenge.
-            </Typography>
-          </Box>
-        </Box>
-
-        <Grid container spacing={4}>
+        <Grid container spacing={6} alignItems="center">
           <Grid item xs={12} md={6}>
-            <Box className="about-card">
+            <Box>
               <Typography 
-                variant="h4" 
+                variant="h2" 
                 sx={{
-                  fontSize: '1.5rem',
-                  fontWeight: 600,
+                  fontSize: { xs: '2rem', sm: '2.5rem', md: '3.5rem' },
+                  fontWeight: 700,
                   marginBottom: '24px',
-                  color: '#f1f5f9'
+                  background: 'linear-gradient(to right, #fff, #cbd5e1)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
                 }}
               >
-                My Stack.
+                About Me<span style={{ color: '#8b5cf6' }}>.</span>
               </Typography>
               
-              <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
-                {stackSkills.map((skill, index) => (
-                  <Chip
+              <Typography 
+                variant="h6" 
+                sx={{
+                  fontSize: '1.25rem',
+                  lineHeight: 1.6,
+                  color: '#e2e8f0',
+                  fontWeight: 400,
+                  marginBottom: '24px'
+                }}
+              >
+                I'm a passionate Software Engineer specialized in Mobile Development.
+              </Typography>
+              
+              <Typography 
+                variant="body1" 
+                sx={{
+                  fontSize: '1rem',
+                  lineHeight: 1.7,
+                  color: 'var(--text-secondary)',
+                  marginBottom: '32px'
+                }}
+              >
+                With a strong foundation in Flutter and React, I build applications that are not only functional but also deliver exceptional user experiences. I thrive in dynamic environments where I can apply my "Clean Architecture" principles to build scalable software.
+              </Typography>
+
+              <Box sx={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                {highlights.map((item, index) => (
+                  <Paper
                     key={index}
-                    label={skill.name}
+                    elevation={0}
                     sx={{
-                      backgroundColor: skill.color,
-                      color: 'white',
-                      fontWeight: 500,
-                      fontSize: '0.9rem',
-                      padding: '8px 4px',
-                      height: 'auto',
-                      '& .MuiChip-label': {
-                        padding: '8px 12px',
-                      },
+                      padding: '16px',
+                      background: 'rgba(255, 255, 255, 0.03)',
+                      border: '1px solid rgba(255, 255, 255, 0.05)',
+                      borderRadius: '12px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '16px',
+                      transition: 'transform 0.2s',
                       '&:hover': {
-                        transform: 'translateY(-2px)',
-                        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
-                      },
-                      transition: 'all 0.3s ease'
+                        transform: 'translateX(8px)',
+                        background: 'rgba(255, 255, 255, 0.05)'
+                      }
                     }}
-                  />
+                  >
+                    <Box sx={{ 
+                      padding: '12px', 
+                      background: 'rgba(15, 23, 42, 0.5)', 
+                      borderRadius: '10px',
+                      display: 'flex'
+                    }}>
+                      {item.icon}
+                    </Box>
+                    <Box>
+                      <Typography variant="h6" sx={{ fontSize: '1rem', fontWeight: 600, color: '#f1f5f9' }}>
+                        {item.title}
+                      </Typography>
+                      <Typography variant="body2" sx={{ fontSize: '0.875rem', color: '#94a3b8' }}>
+                        {item.description}
+                      </Typography>
+                    </Box>
+                  </Paper>
                 ))}
               </Box>
             </Box>
           </Grid>
-
+          
           <Grid item xs={12} md={6}>
-            <Box className="about-card">
-              <Typography 
-                variant="h4" 
+            <Box
+              sx={{
+                position: 'relative',
+                height: '500px',
+                width: '100%',
+                borderRadius: '24px',
+                overflow: 'hidden',
+                background: 'linear-gradient(135deg, #1e1b4b 0%, #312e81 100%)',
+                boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}
+            >
+              {/* Optional: Add a map image or keep the abstract representation */}
+              <Box
+                component="img"
+                src="https://images.unsplash.com/photo-1555899434-94d1368b7bdb?q=80&w=1000&auto=format&fit=crop"
+                alt="Workspace"
                 sx={{
-                  fontSize: '1.5rem',
-                  fontWeight: 600,
-                  marginBottom: '24px',
-                  color: '#f1f5f9'
+                  position: 'absolute',
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  opacity: 0.6
                 }}
-              >
-                My Special Place.
-              </Typography>
-              
+              />
               <Box
                 sx={{
-                  width: '100%',
-                  height: '300px',
-                  borderRadius: '12px',
-                  overflow: 'hidden',
-                  background: 'linear-gradient(135deg, #1e1b4b 0%, #312e81 100%)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
                   position: 'relative',
-                  '&::before': {
-                    content: '""',
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    background: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="1"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-                  }
+                  zIndex: 1,
+                  textAlign: 'center',
+                  background: 'rgba(15, 23, 42, 0.7)',
+                  padding: '32px',
+                  borderRadius: '20px',
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(255, 255, 255, 0.1)'
                 }}
               >
-                <Box
-                  sx={{
-                    position: 'relative',
-                    zIndex: 1,
-                    textAlign: 'center'
-                  }}
-                >
-                  <Typography
-                    variant="h6"
-                    sx={{
-                      color: 'white',
-                      fontWeight: 500,
-                      fontSize: '1.1rem'
-                    }}
-                  >
-                    🌍 Jakarta, Indonesia
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: 'rgba(255, 255, 255, 0.8)',
-                      marginTop: '8px'
-                    }}
-                  >
-                    Where creativity meets innovation
-                  </Typography>
-                </Box>
+                <Typography variant="h4" sx={{ fontWeight: 700, marginBottom: '8px' }}>
+                  Jakarta, ID
+                </Typography>
+                <Typography variant="body1" sx={{ color: '#cbd5e1' }}>
+                  Open to Remote Opportunities Worldwide
+                </Typography>
               </Box>
             </Box>
           </Grid>
