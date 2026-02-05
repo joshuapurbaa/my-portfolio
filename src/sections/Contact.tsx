@@ -207,7 +207,7 @@ export default function Contact() {
                 text="Download CV"
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1TGV1mIwTbadwpH81QZiWmfA3xPVfWI-d/view?usp=sharing",
+                    "https://drive.google.com/file/d/1XypzvI5KXP87Lubcp1isQK936DKA9YkK/view?usp=sharing",
                     "_blank"
                   )
                 }
