@@ -2,23 +2,22 @@ import { Container, Typography, Box, Grid, Paper } from "@mui/material";
 import BoltIcon from '@mui/icons-material/Bolt';
 import DevicesIcon from '@mui/icons-material/Devices';
 import GroupsIcon from '@mui/icons-material/Groups';
-import PublicIcon from '@mui/icons-material/Public';
 
 export default function About() {
   const highlights = [
     {
       title: "Mobile Expert",
-      description: "Specialized in Flutter for high-performance ios & android apps",
+      description: "4+ years specializing in Flutter for high-performance apps",
       icon: <DevicesIcon sx={{ fontSize: 32, color: '#8b5cf6' }} />
     },
     {
-      title: "Problem Solver",
-      description: "Analytical approach to complex technical challenges",
+      title: "Web Developer",
+      description: "Building modern responsive apps with React & Next.js",
       icon: <BoltIcon sx={{ fontSize: 32, color: '#ec4899' }} />
     },
     {
-      title: "Team Player",
-      description: "Experience working in agile cross-functional teams",
+      title: "Industry Mentor",
+      description: "Experience guiding developers at Alterra Academy",
       icon: <GroupsIcon sx={{ fontSize: 32, color: '#10b981' }} />
     }
   ];
@@ -26,9 +25,9 @@ export default function About() {
   return (
     <section id="about" className="section-container">
       <Container maxWidth="lg">
-        <Grid container spacing={6} alignItems="center">
-          <Grid item xs={12} md={6}>
-            <Box>
+        <Grid container spacing={6} justifyContent="center">
+          <Grid item xs={12} lg={10}>
+            <Box sx={{ textAlign: { xs: 'left', md: 'center' } }}>
               <Typography 
                 variant="h2" 
                 sx={{
@@ -53,168 +52,122 @@ export default function About() {
                   marginBottom: '24px'
                 }}
               >
-                I'm a passionate Software Engineer specialized in Mobile Development.
+                I am a Mobile Developer with over 4 years of experience and a Front-End Developer with a passion for building high-quality digital solutions.
               </Typography>
               
-              <Typography 
-                variant="body1" 
-                sx={{
-                  fontSize: '1rem',
-                  lineHeight: 1.7,
-                  color: 'var(--text-secondary)',
-                  marginBottom: '32px'
+              <Box sx={{ mb: 4 }}>
+                <Typography 
+                  variant="body1" 
+                  sx={{
+                    fontSize: '1rem',
+                    lineHeight: 1.7,
+                    color: 'var(--text-secondary)',
+                    marginBottom: '16px'
+                  }}
+                >
+                  Specializing in the <strong>Flutter framework</strong>, I build high-quality mobile applications for both Android and iOS. My expertise covers the full development lifecycle—from slicing designs into responsive UIs to implementing clean architecture, managing state with Provider/BLoC, and deploying to the Play Store and App Store.
+                </Typography>
+
+                <Typography 
+                  variant="body1" 
+                  sx={{
+                    fontSize: '1rem',
+                    lineHeight: 1.7,
+                    color: 'var(--text-secondary)',
+                    marginBottom: '16px'
+                  }}
+                >
+                  I also bring 1 year of experience as a <strong>Front-End Developer</strong>, using React and Next.js to build modern, responsive, and performant web applications with scalable architectures and reusable components.
+                </Typography>
+
+                <Typography 
+                  variant="body1" 
+                  sx={{
+                    fontSize: '1rem',
+                    lineHeight: 1.7,
+                    color: 'var(--text-secondary)',
+                    marginBottom: '16px'
+                  }}
+                >
+                  I've contributed to impactful projects across energy, banking, and trade, including <strong>PLN Click</strong>, <strong>Barista PLN</strong>, <strong>COLOK.IN</strong>, <strong>Bank Raya</strong>, and <strong>Nusa Match</strong>.
+                </Typography>
+
+                <Typography 
+                  variant="body1" 
+                  sx={{
+                    fontSize: '1rem',
+                    lineHeight: 1.7,
+                    color: 'var(--text-secondary)',
+                    marginBottom: '16px'
+                  }}
+                >
+                  My toolkit includes <strong>Firebase</strong>, <strong>AI integration</strong>, and <strong>Agile methodologies</strong>. Beyond coding, I've mentored at <strong>Alterra Academy</strong>, helping aspiring developers build real-world applications.
+                </Typography>
+
+                <Typography 
+                  variant="body1" 
+                  sx={{
+                    fontSize: '1rem',
+                    lineHeight: 1.7,
+                    color: '#8b5cf6',
+                    fontWeight: 500,
+                    fontStyle: 'italic'
+                  }}
+                >
+                  "Always eager to learn and innovate, I am passionate about creating technology that solves real-world problems while delivering exceptional user experiences."
+                </Typography>
+              </Box>
+
+              <Box 
+                sx={{ 
+                  display: 'grid', 
+                  gridTemplateColumns: { xs: '1fr', md: 'repeat(3, 1fr)' }, 
+                  gap: '20px',
+                  mt: 4
                 }}
               >
-                With a strong foundation in Flutter and React, I build applications that are not only functional but also deliver exceptional user experiences. I thrive in dynamic environments where I can apply my "Clean Architecture" principles to build scalable software.
-              </Typography>
-
-              <Box sx={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 {highlights.map((item, index) => (
                   <Paper
                     key={index}
                     elevation={0}
                     sx={{
-                      padding: '16px',
+                      padding: '24px',
                       background: 'rgba(255, 255, 255, 0.03)',
                       border: '1px solid rgba(255, 255, 255, 0.05)',
-                      borderRadius: '12px',
+                      borderRadius: '16px',
                       display: 'flex',
-                      alignItems: 'center',
+                      flexDirection: 'column',
+                      alignItems: { xs: 'flex-start', md: 'center' },
+                      textAlign: { xs: 'left', md: 'center' },
                       gap: '16px',
-                      transition: 'transform 0.2s',
+                      transition: 'all 0.3s ease',
                       '&:hover': {
-                        transform: 'translateX(8px)',
-                        background: 'rgba(255, 255, 255, 0.05)'
+                        transform: 'translateY(-8px)',
+                        background: 'rgba(255, 255, 255, 0.05)',
+                        borderColor: 'rgba(139, 92, 246, 0.3)',
+                        boxShadow: '0 10px 30px -10px rgba(139, 92, 246, 0.2)'
                       }
                     }}
                   >
                     <Box sx={{ 
-                      padding: '12px', 
-                      background: 'rgba(15, 23, 42, 0.5)', 
-                      borderRadius: '10px',
-                      display: 'flex'
+                      padding: '16px', 
+                      background: 'rgba(139, 92, 246, 0.1)', 
+                      borderRadius: '12px',
+                      display: 'flex',
+                      color: '#8b5cf6'
                     }}>
                       {item.icon}
                     </Box>
                     <Box>
-                      <Typography variant="h6" sx={{ fontSize: '1rem', fontWeight: 600, color: '#f1f5f9' }}>
+                      <Typography variant="h6" sx={{ fontSize: '1.1rem', fontWeight: 600, color: '#f1f5f9', mb: 1 }}>
                         {item.title}
                       </Typography>
-                      <Typography variant="body2" sx={{ fontSize: '0.875rem', color: '#94a3b8' }}>
+                      <Typography variant="body2" sx={{ fontSize: '0.9rem', color: '#94a3b8', lineHeight: 1.5 }}>
                         {item.description}
                       </Typography>
                     </Box>
                   </Paper>
                 ))}
-              </Box>
-            </Box>
-          </Grid>
-          
-          <Grid item xs={12} md={6}>
-            <Box
-              sx={{
-                position: 'relative',
-                minHeight: '500px',
-                width: '100%',
-                borderRadius: '24px',
-                overflow: 'hidden',
-                background: 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%)',
-                boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3)',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                padding: '40px',
-                gap: '40px',
-                border: '1px solid rgba(255, 255, 255, 0.05)'
-              }}
-            >
-              {/* Animated Globe Section - Now separate from text */}
-              <Box
-                sx={{
-                  position: 'relative',
-                  width: '100%',
-                  height: '220px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}
-              >
-                {/* Background Glow */}
-                <Box
-                  sx={{
-                    position: 'absolute',
-                    width: '200px',
-                    height: '200px',
-                    background: 'radial-gradient(circle, rgba(139, 92, 246, 0.4) 0%, rgba(139, 92, 246, 0) 70%)',
-                    borderRadius: '50%',
-                    filter: 'blur(30px)',
-                    animation: 'pulse 8s ease-in-out infinite',
-                    '@keyframes pulse': {
-                      '0%, 100%': { transform: 'scale(1)', opacity: 0.4 },
-                      '50%': { transform: 'scale(1.3)', opacity: 0.6 },
-                    }
-                  }}
-                />
-                
-                {/* Primary Rotating Globe */}
-                <PublicIcon 
-                  sx={{ 
-                    fontSize: { xs: '180px', md: '220px' }, 
-                    color: 'rgba(139, 92, 246, 0.2)',
-                    animation: 'rotate 60s linear infinite',
-                    '@keyframes rotate': {
-                      from: { transform: 'rotate(0deg)' },
-                      to: { transform: 'rotate(360deg)' }
-                    }
-                  }} 
-                />
-
-                {/* Secondary Reverse Rotating Globe for Depth */}
-                <PublicIcon 
-                  sx={{ 
-                    position: 'absolute',
-                    fontSize: { xs: '120px', md: '160px' }, 
-                    color: 'rgba(236, 72, 153, 0.15)',
-                    animation: 'rotateReverse 40s linear infinite',
-                    '@keyframes rotateReverse': {
-                      from: { transform: 'rotate(0deg)' },
-                      to: { transform: 'rotate(-360deg)' }
-                    }
-                  }} 
-                />
-              </Box>
-
-              {/* Location Information Section */}
-              <Box
-                sx={{
-                  position: 'relative',
-                  zIndex: 1,
-                  textAlign: 'center',
-                  background: 'rgba(255, 255, 255, 0.03)',
-                  padding: '24px 32px',
-                  borderRadius: '24px',
-                  backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
-                  width: '100%',
-                  maxWidth: '360px'
-                }}
-              >
-                <Typography 
-                  variant="h4" 
-                  sx={{ 
-                    fontWeight: 800, 
-                    marginBottom: '8px',
-                    background: 'linear-gradient(to right, #fff, #94a3b8)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                  }}
-                >
-                  Jakarta, ID
-                </Typography>
-                <Typography variant="body1" sx={{ color: '#94a3b8', fontWeight: 500 }}>
-                  Open to Remote Opportunities Worldwide
-                </Typography>
               </Box>
             </Box>
           </Grid>
