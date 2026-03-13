@@ -40,8 +40,13 @@ const BottomSheetDialog: React.FC<BottomSheetDialogProps> = ({
           bottom: 0,
           width: "100%",
           height: "90%",
-          borderTopLeftRadius: 16,
-          borderTopRightRadius: 16,
+          borderTopLeftRadius: 24,
+          borderTopRightRadius: 24,
+          background: "var(--background-lighter)",
+          backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05))", // Subtle lift
+          color: "var(--text-primary)",
+          border: "1px solid var(--glass-border)",
+          overflow: "hidden",
         },
       }}
     >
@@ -54,7 +59,7 @@ const BottomSheetDialog: React.FC<BottomSheetDialogProps> = ({
           zIndex: 2,
         }}
       >
-        <IconButton onClick={onClose}>
+        <IconButton onClick={onClose} sx={{ color: "var(--text-secondary)", "&:hover": { color: "var(--text-primary)" } }}>
           <CloseIcon />
         </IconButton>
       </Box>
@@ -69,7 +74,19 @@ const BottomSheetDialog: React.FC<BottomSheetDialogProps> = ({
           height: "100%",
         }}
       >
-        <Typography variant="h4" sx={{ mb: 2 }}>
+        <Typography 
+          variant="h4" 
+          sx={{ 
+            mb: 4, 
+            fontWeight: 800, 
+            color: "var(--text-primary)",
+            textAlign: 'center',
+            background: 'linear-gradient(to right, #fff, #cbd5e1)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            letterSpacing: '-0.02em'
+          }}
+        >
           {title}
         </Typography>
         <Grid
@@ -98,32 +115,59 @@ const BottomSheetDialog: React.FC<BottomSheetDialogProps> = ({
             </Grid>
           ))}
         </Grid>
-        <Box paddingTop={2}>
-          <Typography sx={{ fontSize: "1.2rem" }}>Descritption:</Typography>
+        <Box sx={{ width: '100%', maxWidth: '900px', mt: 4, px: { xs: 2, md: 4 } }}>
+          <Typography 
+            variant="h6" 
+            sx={{ 
+              color: "var(--primary-light)", 
+              fontWeight: 600,
+              mb: 1,
+              textTransform: 'uppercase',
+              letterSpacing: '1px',
+              fontSize: '0.9rem'
+            }}
+          >
+            Description
+          </Typography>
           <Typography
             variant="body1"
             sx={{
-              overflow: "auto",
-              flexGrow: 1,
-              paddingBottom: 3,
-              fontSize: "1.3rem",
+              color: "var(--text-primary)",
+              mb: 4,
+              fontSize: "1.1rem",
+              lineHeight: 1.7,
+              opacity: 0.9
             }}
           >
             {description}
           </Typography>
-          <Typography sx={{ fontSize: "1.2rem" }}>Features:</Typography>
+
+          <Typography 
+            variant="h6" 
+            sx={{ 
+              color: "var(--primary-light)", 
+              fontWeight: 600,
+              mb: 1,
+              textTransform: 'uppercase',
+              letterSpacing: '1px',
+              fontSize: '0.9rem'
+            }}
+          >
+            Key Features
+          </Typography>
           <Typography
             variant="body1"
             sx={{
-              overflow: "auto",
-              flexGrow: 1,
-              paddingBottom: 3,
-              fontSize: "1.3rem",
+              color: "var(--text-primary)",
+              mb: 4,
+              fontSize: "1.1rem",
+              lineHeight: 1.7,
+              opacity: 0.9
             }}
           >
             {project.features}
           </Typography>
-          <Box sx={{ display: "flex", gap: 2 }}>
+          <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap", justifyContent: { xs: 'center', md: 'flex-start' } }}>
             {project.githubLink && (
               <ContactButton
                 icon={<GitHubIcon />}
@@ -193,10 +237,13 @@ const BottomSheetDialog: React.FC<BottomSheetDialogProps> = ({
                   <Typography
                     key={index}
                     sx={{
-                      backgroundColor: "#e0e0e0",
-                      borderRadius: 2,
-                      padding: "0.5rem 1rem",
-                      fontSize: "0.875rem",
+                      backgroundColor: "rgba(139, 92, 246, 0.1)",
+                      color: "var(--primary-light)",
+                      borderRadius: "8px",
+                      padding: "6px 16px",
+                      fontSize: "0.85rem",
+                      fontWeight: 500,
+                      border: "1px solid rgba(139, 92, 246, 0.2)",
                     }}
                   >
                     #{tag}

@@ -2,6 +2,7 @@ import { Container, Typography, Box, Grid, Paper } from "@mui/material";
 import BoltIcon from '@mui/icons-material/Bolt';
 import DevicesIcon from '@mui/icons-material/Devices';
 import GroupsIcon from '@mui/icons-material/Groups';
+import PublicIcon from '@mui/icons-material/Public';
 
 export default function About() {
   const highlights = [
@@ -113,46 +114,105 @@ export default function About() {
             <Box
               sx={{
                 position: 'relative',
-                height: '500px',
+                minHeight: '500px',
                 width: '100%',
                 borderRadius: '24px',
                 overflow: 'hidden',
-                background: 'linear-gradient(135deg, #1e1b4b 0%, #312e81 100%)',
+                background: 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%)',
                 boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3)',
                 display: 'flex',
+                flexDirection: 'column',
                 alignItems: 'center',
-                justifyContent: 'center'
+                justifyContent: 'center',
+                padding: '40px',
+                gap: '40px',
+                border: '1px solid rgba(255, 255, 255, 0.05)'
               }}
             >
-              {/* Optional: Add a map image or keep the abstract representation */}
+              {/* Animated Globe Section - Now separate from text */}
               <Box
-                component="img"
-                src="https://images.unsplash.com/photo-1555899434-94d1368b7bdb?q=80&w=1000&auto=format&fit=crop"
-                alt="Workspace"
                 sx={{
-                  position: 'absolute',
+                  position: 'relative',
                   width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  opacity: 0.6
+                  height: '220px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
                 }}
-              />
+              >
+                {/* Background Glow */}
+                <Box
+                  sx={{
+                    position: 'absolute',
+                    width: '200px',
+                    height: '200px',
+                    background: 'radial-gradient(circle, rgba(139, 92, 246, 0.4) 0%, rgba(139, 92, 246, 0) 70%)',
+                    borderRadius: '50%',
+                    filter: 'blur(30px)',
+                    animation: 'pulse 8s ease-in-out infinite',
+                    '@keyframes pulse': {
+                      '0%, 100%': { transform: 'scale(1)', opacity: 0.4 },
+                      '50%': { transform: 'scale(1.3)', opacity: 0.6 },
+                    }
+                  }}
+                />
+                
+                {/* Primary Rotating Globe */}
+                <PublicIcon 
+                  sx={{ 
+                    fontSize: { xs: '180px', md: '220px' }, 
+                    color: 'rgba(139, 92, 246, 0.2)',
+                    animation: 'rotate 60s linear infinite',
+                    '@keyframes rotate': {
+                      from: { transform: 'rotate(0deg)' },
+                      to: { transform: 'rotate(360deg)' }
+                    }
+                  }} 
+                />
+
+                {/* Secondary Reverse Rotating Globe for Depth */}
+                <PublicIcon 
+                  sx={{ 
+                    position: 'absolute',
+                    fontSize: { xs: '120px', md: '160px' }, 
+                    color: 'rgba(236, 72, 153, 0.15)',
+                    animation: 'rotateReverse 40s linear infinite',
+                    '@keyframes rotateReverse': {
+                      from: { transform: 'rotate(0deg)' },
+                      to: { transform: 'rotate(-360deg)' }
+                    }
+                  }} 
+                />
+              </Box>
+
+              {/* Location Information Section */}
               <Box
                 sx={{
                   position: 'relative',
                   zIndex: 1,
                   textAlign: 'center',
-                  background: 'rgba(15, 23, 42, 0.7)',
-                  padding: '32px',
-                  borderRadius: '20px',
+                  background: 'rgba(255, 255, 255, 0.03)',
+                  padding: '24px 32px',
+                  borderRadius: '24px',
                   backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)'
+                  border: '1px solid rgba(255, 255, 255, 0.08)',
+                  width: '100%',
+                  maxWidth: '360px'
                 }}
               >
-                <Typography variant="h4" sx={{ fontWeight: 700, marginBottom: '8px' }}>
+                <Typography 
+                  variant="h4" 
+                  sx={{ 
+                    fontWeight: 800, 
+                    marginBottom: '8px',
+                    background: 'linear-gradient(to right, #fff, #94a3b8)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                  }}
+                >
                   Jakarta, ID
                 </Typography>
-                <Typography variant="body1" sx={{ color: '#cbd5e1' }}>
+                <Typography variant="body1" sx={{ color: '#94a3b8', fontWeight: 500 }}>
                   Open to Remote Opportunities Worldwide
                 </Typography>
               </Box>
