@@ -2,7 +2,6 @@ import { Container, Grid, Typography, Box, Paper, Chip } from "@mui/material";
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import CodeIcon from '@mui/icons-material/Code';
 import StorageIcon from '@mui/icons-material/Storage';
-import terminalIcon from '@mui/icons-material/Terminal';
 import GroupIcon from '@mui/icons-material/Group';
 
 const skillsData = [

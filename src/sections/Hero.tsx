@@ -97,7 +97,7 @@ export default function Hero() {
               <div className="profile-image-container">
                 <div className="profile-image-frame"></div>
                 <img
-                  src="/images/photo-profile.png"
+                  src="/images/photo-profile.jpeg"
                   alt="Yoshua Purba"
                   className="profile-image"
                 />

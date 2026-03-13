@@ -51,5 +51,6 @@ export default tseslint.config({
 
 <!-- Deployment -->
 
+npm run build
 npx vercel deploy
 npx vercel --prod
