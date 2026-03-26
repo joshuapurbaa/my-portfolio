@@ -5,13 +5,14 @@ import WorkIcon from '@mui/icons-material/Work';
 // Added 'technologies' field for better HR scanning
 const experiences = [
   {
-    company: "Bank Raya",
+    company: "PT Satkomindo Mediyasa",
     period: "Aug 2024 - Present",
     role: "Frontend Developer",
+    description: "Working as a Frontend Developer for Bank Raya, under a contract with PT Satkomindo Mediyasa.",
     tasks: [
-      "Expanding features in current mobile applications using Flutter for cross-platform performance",
-      "Developing and maintaining webviews using Next.js for seamless integration",
-      "Collaborating with cross-functional teams to deliver high-quality banking features",
+      "Developing and maintaining the Bank Raya mobile application (Paylater Squad) using Flutter and Dart.",
+      "Building and integrating the Raya Paylater webview leveraging Next.js and TypeScript.",
+      "Collaborating cross-functionally with UI/UX designers, backend developers, and product managers to deliver responsive and high-performing features.",
     ],
     technologies: ["Flutter", "Dart", "Next.js", "TypeScript", "CI/CD"],
     highlighted: true
@@ -20,10 +21,11 @@ const experiences = [
     company: "PT. PLN Icon Plus",
     period: "Feb 2023 - Aug 2024",
     role: "Flutter Developer",
+    description: "Working as a Flutter Developer for PLN Icon Plus, under a contract with Mega Giga Solusindo.",
     tasks: [
-      "Implemented new critical features for PLN Click, Barista PLN, and COLOK.IN apps",
-      "Responsible for bug fixing, performance optimization, and UI/UX enhancements",
-      "Maintained code quality and adhered to best practices in mobile development"
+      "Developed and implemented critical new features for key mobile applications, including PLN Click, Barista PLN, and COLOK.IN.",
+      "Handled bug fixing, performance optimization, and continuous UI/UX enhancements to improve application stability and user satisfaction.",
+      "Maintained high code quality and strictly adhered to mobile development best practices to ensure scalable and maintainable applications."
     ],
     technologies: ["Flutter", "Dart", "State Management", "REST API"],
     highlighted: false
@@ -131,11 +133,24 @@ export default function Experience() {
                       fontSize: '1.5rem',
                       fontWeight: 700,
                       color: 'white',
-                      marginBottom: '16px'
+                      marginBottom: '8px'
                     }}
                   >
                     {exp.role}
                   </Typography>
+
+                  {(exp as any).description && (
+                    <Typography
+                      sx={{
+                        color: '#94a3b8',
+                        fontSize: '1rem',
+                        fontStyle: 'italic',
+                        marginBottom: '16px'
+                      }}
+                    >
+                      {(exp as any).description}
+                    </Typography>
+                  )}
 
                   <ul className="experience-tasks">
                     {exp.tasks.map((task, taskIndex) => (
