@@ -34,6 +34,7 @@ const experiences = [
     company: "Alterra Academy",
     period: "Dec 2021 - Jun 2023",
     role: "Flutter Mentor (Freelance)",
+    description: "Mentoring for the Kampus Merdeka program, focusing on mobile application development with Flutter and Dart.",
     tasks: [
       "Created comprehensive learning materials for mobile application development",
       "Produced high-quality video presentations and tutorials",
